@@ -1,0 +1,61 @@
+---
+title: "Data Collection"
+author: "Yosep Dwi Kristanto"
+date: 2024-01-06
+format:
+  pdf:
+    papersize: a4
+    geometry: 
+      - top=30mm
+      - left=30mm
+      - bottom=30mm
+      - right=30mm
+editor: visual
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(jsonlite)
+```
+
+# Audience Retention
+
+## Function
+
+Retrieving audience retention data of videos from subtopic 2.1 Fungsi. The data was retrieved on 6 January 2024.
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.1.1 <- fromJSON("datasets/retention_2020_7g35w-sL_JA.json",
+                             flatten = TRUE)
+ret20_json_2.1.2 <- fromJSON("datasets/retention_2020_a3pMCY75leA.json",
+                             flatten = TRUE)
+ret20_json_2.1.3 <- fromJSON("datasets/retention_2020_qmTXyVwt0F4.json",
+                             flatten = TRUE)
+ret20_json_2.1.4 <- fromJSON("datasets/retention_2020_BB7a6alY_Kg.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+ret20_json_2.1 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.1.1$rows),
+       as.data.frame(ret20_json_2.1.2$rows),
+       as.data.frame(ret20_json_2.1.3$rows),
+       as.data.frame(ret20_json_2.1.4$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+ret20_json_2.1[,c(2, 3, 4)] = apply(ret20_json_2.1[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(ret20_json_2.1)
+```
