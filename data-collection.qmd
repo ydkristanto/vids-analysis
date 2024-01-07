@@ -1014,7 +1014,7 @@ Retrieving audience retention data of videos from subtopic 4.2 Fungsi Eksponen A
 
 ```         
 curl \
-  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DTeJ_Dht6N4E%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DeJizsGLUFFw%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
   --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
   --header 'Accept: application/json' \
   --compressed
@@ -1047,11 +1047,11 @@ retention_2020_4.2[,c(2, 3, 4)] = apply(retention_2020_4.2[,c(2, 3, 4)], 2,
 print(retention_2020_4.2)
 ```
 
-Retrieving audience retention data of videos from subtopic 3.3 Pertidaksamaan Rasional. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+Retrieving audience retention data of videos from subtopic 4.3 Fungsi Logaritma. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
 
 ```         
 curl \
-  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DyA9kwmITnkk%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DdPNrkm12e5M%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
   --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
   --header 'Accept: application/json' \
   --compressed
@@ -1061,15 +1061,21 @@ curl \
 #| echo: false
 
 # Creating lists from JSON files
-ret20_json_3.3.1 <- fromJSON("datasets/retention_2020_quoIHoqCJs4.json",
+ret20_json_4.3.1 <- fromJSON("datasets/retention_2020_wjQracmCEag.json",
                              flatten = TRUE)
-ret20_json_3.3.2 <- fromJSON("datasets/retention_2020_yA9kwmITnkk.json",
+ret20_json_4.3.2 <- fromJSON("datasets/retention_2020_r5Xkh25jgwY.json",
+                             flatten = TRUE)
+ret20_json_4.3.3 <- fromJSON("datasets/retention_2020_OiE3M7m9dxs.json",
+                             flatten = TRUE)
+ret20_json_4.3.4 <- fromJSON("datasets/retention_2020_dPNrkm12e5M.json",
                              flatten = TRUE)
 
 # Combining dataframes into a tibble
-retention_2020_3.3 <- rbind_pages(
-  list(as.data.frame(ret20_json_3.3.1$rows),
-       as.data.frame(ret20_json_3.3.2$rows))
+retention_2020_4.3 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.3.1$rows),
+       as.data.frame(ret20_json_4.3.2$rows),
+       as.data.frame(ret20_json_4.3.3$rows),
+       as.data.frame(ret20_json_4.3.4$rows))
 ) %>% 
   tibble() %>% 
   rename(vid_id = V1,
@@ -1077,11 +1083,88 @@ retention_2020_3.3 <- rbind_pages(
          audience_watch_ratio = V3,
          relative_retention_performance = V4)
 
-retention_2020_3.3[,c(2, 3, 4)] = apply(retention_2020_3.3[,c(2, 3, 4)], 2,
+retention_2020_4.3[,c(2, 3, 4)] = apply(retention_2020_4.3[,c(2, 3, 4)], 2,
                                     function(x)
                                       as.numeric(as.character(x)))
 
-print(retention_2020_3.3)
+print(retention_2020_4.3)
+```
+
+Retrieving audience retention data of videos from subtopic 4.4 Sifat-Sifat Logaritma. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DIaUXOCf73Lg%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_4.4.1 <- fromJSON("datasets/retention_2020_WnE0IIO0EQ0.json",
+                             flatten = TRUE)
+ret20_json_4.4.2 <- fromJSON("datasets/retention_2020_wMzpIezHdcs.json",
+                             flatten = TRUE)
+ret20_json_4.4.3 <- fromJSON("datasets/retention_2020_IaUXOCf73Lg.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_4.4 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.4.1$rows),
+       as.data.frame(ret20_json_4.4.2$rows),
+       as.data.frame(ret20_json_4.4.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_4.4[,c(2, 3, 4)] = apply(retention_2020_4.4[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_4.4)
+```
+
+Retrieving audience retention data of videos from subtopic 4.5 Persamaan-Persamaan Eksponen dan Logaritma. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DoHE0GKd5AZI%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_4.5.1 <- fromJSON("datasets/retention_2020_gcx2CLY3GD4.json",
+                             flatten = TRUE)
+ret20_json_4.5.2 <- fromJSON("datasets/retention_2020_oHE0GKd5AZI.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_4.5 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.5.1$rows),
+       as.data.frame(ret20_json_4.5.2$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_4.5[,c(2, 3, 4)] = apply(retention_2020_4.5[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_4.5)
 ```
 
 Combining subtopics into one topic data.
@@ -1089,12 +1172,232 @@ Combining subtopics into one topic data.
 ```{r}
 #| echo: false
 
-retention_2020_3 <- bind_rows(retention_2020_3.1,
-                              retention_2020_3.2,
-                              retention_2020_3.3) %>%
+retention_2020_4 <- bind_rows(retention_2020_4.1,
+                              retention_2020_4.2,
+                              retention_2020_4.3,
+                              retention_2020_4.4,
+                              retention_2020_4.5
+                              ) %>%
   mutate(year = 2020)
-write_csv(retention_2020_3,
-          file = "datasets/retention_2020_3.csv")
+write_csv(retention_2020_4,
+          file = "datasets/retention_2020_4.csv")
 
-print(retention_2020_3)
+print(retention_2020_4)
+```
+
+### 2021
+
+Retrieving audience retention data of videos from subtopic 4.1 Fungsi Eksponen. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DOXRHUDd28uM%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_4.1.1 <- fromJSON("datasets/retention_2021_zG5DYRKRrRI.json",
+                             flatten = TRUE)
+ret21_json_4.1.2 <- fromJSON("datasets/retention_2021_h8FZ_H_zIlA.json",
+                             flatten = TRUE)
+ret21_json_4.1.3 <- fromJSON("datasets/retention_2021_OXRHUDd28uM.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_4.1 <- rbind_pages(
+  list(as.data.frame(ret21_json_4.1.1$rows),
+       as.data.frame(ret21_json_4.1.2$rows),
+       as.data.frame(ret21_json_4.1.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_4.1[,c(2, 3, 4)] = apply(retention_2021_4.1[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_4.1)
+```
+
+Retrieving audience retention data of videos from subtopic 4.2 Fungsi Eksponen Alami. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DeJizsGLUFFw%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_4.2.1 <- fromJSON("datasets/retention_2020_s-HX0NcVGco.json",
+                             flatten = TRUE)
+ret20_json_4.2.2 <- fromJSON("datasets/retention_2020_eJizsGLUFFw.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_4.2 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.2.1$rows),
+       as.data.frame(ret20_json_4.2.2$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_4.2[,c(2, 3, 4)] = apply(retention_2020_4.2[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_4.2)
+```
+
+Retrieving audience retention data of videos from subtopic 4.3 Fungsi Logaritma. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DdPNrkm12e5M%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_4.3.1 <- fromJSON("datasets/retention_2020_wjQracmCEag.json",
+                             flatten = TRUE)
+ret20_json_4.3.2 <- fromJSON("datasets/retention_2020_r5Xkh25jgwY.json",
+                             flatten = TRUE)
+ret20_json_4.3.3 <- fromJSON("datasets/retention_2020_OiE3M7m9dxs.json",
+                             flatten = TRUE)
+ret20_json_4.3.4 <- fromJSON("datasets/retention_2020_dPNrkm12e5M.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_4.3 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.3.1$rows),
+       as.data.frame(ret20_json_4.3.2$rows),
+       as.data.frame(ret20_json_4.3.3$rows),
+       as.data.frame(ret20_json_4.3.4$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_4.3[,c(2, 3, 4)] = apply(retention_2020_4.3[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_4.3)
+```
+
+Retrieving audience retention data of videos from subtopic 4.4 Sifat-Sifat Logaritma. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DIaUXOCf73Lg%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_4.4.1 <- fromJSON("datasets/retention_2020_WnE0IIO0EQ0.json",
+                             flatten = TRUE)
+ret20_json_4.4.2 <- fromJSON("datasets/retention_2020_wMzpIezHdcs.json",
+                             flatten = TRUE)
+ret20_json_4.4.3 <- fromJSON("datasets/retention_2020_IaUXOCf73Lg.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_4.4 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.4.1$rows),
+       as.data.frame(ret20_json_4.4.2$rows),
+       as.data.frame(ret20_json_4.4.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_4.4[,c(2, 3, 4)] = apply(retention_2020_4.4[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_4.4)
+```
+
+Retrieving audience retention data of videos from subtopic 4.5 Persamaan-Persamaan Eksponen dan Logaritma. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DoHE0GKd5AZI%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_4.5.1 <- fromJSON("datasets/retention_2020_gcx2CLY3GD4.json",
+                             flatten = TRUE)
+ret20_json_4.5.2 <- fromJSON("datasets/retention_2020_oHE0GKd5AZI.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_4.5 <- rbind_pages(
+  list(as.data.frame(ret20_json_4.5.1$rows),
+       as.data.frame(ret20_json_4.5.2$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_4.5[,c(2, 3, 4)] = apply(retention_2020_4.5[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_4.5)
+```
+
+Combining subtopics into one topic data.
+
+```{r}
+#| echo: false
+
+retention_2020_4 <- bind_rows(retention_2020_4.1,
+                              retention_2020_4.2,
+                              retention_2020_4.3,
+                              retention_2020_4.4,
+                              retention_2020_4.5
+                              ) %>%
+  mutate(year = 2020)
+write_csv(retention_2020_4,
+          file = "datasets/retention_2020_4.csv")
+
+print(retention_2020_4)
 ```
