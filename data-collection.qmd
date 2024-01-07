@@ -5,6 +5,7 @@ date: 2024-01-06
 format:
   pdf:
     papersize: a4
+    number-sections: true
     geometry: 
       - top=30mm
       - left=30mm
@@ -25,6 +26,8 @@ library(jsonlite)
 
 ## Function
 
+### 2020
+
 Retrieving audience retention data of videos from subtopic 2.1 Fungsi. The data was retrieved on 6 January 2024.
 
 ```{r}
@@ -41,7 +44,7 @@ ret20_json_2.1.4 <- fromJSON("datasets/retention_2020_BB7a6alY_Kg.json",
                              flatten = TRUE)
 
 # Combining dataframes into a tibble
-ret20_json_2.1 <- rbind_pages(
+retention_2020_2.1 <- rbind_pages(
   list(as.data.frame(ret20_json_2.1.1$rows),
        as.data.frame(ret20_json_2.1.2$rows),
        as.data.frame(ret20_json_2.1.3$rows),
@@ -53,9 +56,289 @@ ret20_json_2.1 <- rbind_pages(
          audience_watch_ratio = V3,
          relative_retention_performance = V4)
 
-ret20_json_2.1[,c(2, 3, 4)] = apply(ret20_json_2.1[,c(2, 3, 4)], 2,
+retention_2020_2.1[,c(2, 3, 4)] = apply(retention_2020_2.1[,c(2, 3, 4)], 2,
                                     function(x)
                                       as.numeric(as.character(x)))
 
-print(ret20_json_2.1)
+print(retention_2020_2.1)
 ```
+
+Retrieving audience retention data of videos from subtopic 2.2 Grafik Fungsi. The data was retrieved on 7 January 2024.
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.2.1 <- fromJSON("datasets/retention_2020_aHo1kbccgLM.json",
+                             flatten = TRUE)
+ret20_json_2.2.2 <- fromJSON("datasets/retention_2020_Lmx4Bc7WhHU.json",
+                             flatten = TRUE)
+ret20_json_2.2.3 <- fromJSON("datasets/retention_2020_Aa1Zd1nqAaM.json",
+                             flatten = TRUE)
+ret20_json_2.2.4 <- fromJSON("datasets/retention_2020_2Xjq_Rc8csw.json",
+                             flatten = TRUE)
+ret20_json_2.2.5 <- fromJSON("datasets/retention_2020_n_QVgE8mGic.json",
+                             flatten = TRUE)
+ret20_json_2.2.6 <- fromJSON("datasets/retention_2020_aMwB3YzdnLY.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_2.2 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.2.1$rows),
+       as.data.frame(ret20_json_2.2.2$rows),
+       as.data.frame(ret20_json_2.2.3$rows),
+       as.data.frame(ret20_json_2.2.4$rows),
+       as.data.frame(ret20_json_2.2.5$rows),
+       as.data.frame(ret20_json_2.2.6$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_2.2[,c(2, 3, 4)] = apply(retention_2020_2.2[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_2.2)
+```
+
+Retrieving audience retention data of videos from subtopic 2.3 Informasi Penting Grafik Fungsi. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=elapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DMD5LDDmH3Lo%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.3.1 <- fromJSON("datasets/retention_2020_MD5LDDmH3Lo.json",
+                             flatten = TRUE)
+ret20_json_2.3.2 <- fromJSON("datasets/retention_2020_pSPHTfd-GA4.json",
+                             flatten = TRUE)
+ret20_json_2.3.3 <- fromJSON("datasets/retention_2020_288bRpvZSsg.json",
+                             flatten = TRUE)
+ret20_json_2.3.4 <- fromJSON("datasets/retention_2020_AmIW3vUhY0E.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_2.3 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.3.1$rows),
+       as.data.frame(ret20_json_2.3.2$rows),
+       as.data.frame(ret20_json_2.3.3$rows),
+       as.data.frame(ret20_json_2.3.4$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_2.3[,c(2, 3, 4)] = apply(retention_2020_2.3[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_2.3)
+```
+
+Retrieving audience retention data of videos from subtopic 2.4 Fungsi Linear dan Modelnya. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3Dtsca4HeUPyA%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.4.1 <- fromJSON("datasets/retention_2020_LIkQgdMtovQ.json",
+                             flatten = TRUE)
+ret20_json_2.4.2 <- fromJSON("datasets/retention_2020_b8SV9Xk5P0Q.json",
+                             flatten = TRUE)
+ret20_json_2.4.3 <- fromJSON("datasets/retention_2020_tsca4HeUPyA.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_2.4 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.4.1$rows),
+       as.data.frame(ret20_json_2.4.2$rows),
+       as.data.frame(ret20_json_2.4.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_2.4[,c(2, 3, 4)] = apply(retention_2020_2.4[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_2.4)
+```
+
+Retrieving audience retention data of videos from subtopic 2.5 Transformasi Fungsi. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DBYRBjDIZSZo%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.5.1 <- fromJSON("datasets/retention_2020_jytZgg-oQyM.json",
+                             flatten = TRUE)
+ret20_json_2.5.2 <- fromJSON("datasets/retention_2020_rZEOxQWltIs.json",
+                             flatten = TRUE)
+ret20_json_2.5.3 <- fromJSON("datasets/retention_2020_5flm8zGveZ8.json",
+                             flatten = TRUE)
+ret20_json_2.5.4 <- fromJSON("datasets/retention_2020_d2wI1ikAAlg.json",
+                             flatten = TRUE)
+ret20_json_2.5.5 <- fromJSON("datasets/retention_2020_A4gZgqEKshw.json",
+                             flatten = TRUE)
+ret20_json_2.5.6 <- fromJSON("datasets/retention_2020_BYRBjDIZSZo.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_2.5 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.5.1$rows),
+       as.data.frame(ret20_json_2.5.2$rows),
+       as.data.frame(ret20_json_2.5.3$rows),
+       as.data.frame(ret20_json_2.5.4$rows),
+       as.data.frame(ret20_json_2.5.5$rows),
+       as.data.frame(ret20_json_2.5.6$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_2.5[,c(2, 3, 4)] = apply(retention_2020_2.5[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_2.5)
+```
+
+Retrieving audience retention data of videos from subtopic 2.6 Kombinasi Beberapa Fungsi. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DoKlJDBsc_A0%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.6.1 <- fromJSON("datasets/retention_2020_oKlJDBsc_A0.json",
+                             flatten = TRUE)
+ret20_json_2.6.2 <- fromJSON("datasets/retention_2020_FRgbKVwKp3M.json",
+                             flatten = TRUE)
+ret20_json_2.6.3 <- fromJSON("datasets/retention_2020_IYSIzMNvT0k.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_2.6 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.6.1$rows),
+       as.data.frame(ret20_json_2.6.2$rows),
+       as.data.frame(ret20_json_2.6.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_2.6[,c(2, 3, 4)] = apply(retention_2020_2.6[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_2.6)
+```
+
+Retrieving audience retention data of videos from subtopic 2.7 Fungsi Satu-Satu dan Inversnya. The data was retrieved on 7 January 2024 from Youtube API Explorer with these codes.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3DriRa1fv7XAo%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-10-07&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret20_json_2.7.1 <- fromJSON("datasets/retention_2020_hcUC4IFisL4.json",
+                             flatten = TRUE)
+ret20_json_2.7.2 <- fromJSON("datasets/retention_2020_o7p5-2gqPc4.json",
+                             flatten = TRUE)
+ret20_json_2.7.3 <- fromJSON("datasets/retention_2020_k_krAa5BcUc.json",
+                             flatten = TRUE)
+ret20_json_2.7.4 <- fromJSON("datasets/retention_2020_2Ftvle6k9as.json",
+                             flatten = TRUE)
+ret20_json_2.7.5 <- fromJSON("datasets/retention_2020_riRa1fv7XAo.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2020_2.7 <- rbind_pages(
+  list(as.data.frame(ret20_json_2.7.1$rows),
+       as.data.frame(ret20_json_2.7.2$rows),
+       as.data.frame(ret20_json_2.7.3$rows),
+       as.data.frame(ret20_json_2.7.4$rows),
+       as.data.frame(ret20_json_2.7.5$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2020_2.7[,c(2, 3, 4)] = apply(retention_2020_2.7[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2020_2.7)
+```
+
+Combining subtopic data into one topic.
+
+```{r}
+#| echo: false
+
+retention_2020_2 <- bind_rows(retention_2020_2.1,
+                              retention_2020_2.2,
+                              retention_2020_2.3,
+                              retention_2020_2.4,
+                              retention_2020_2.5,
+                              retention_2020_2.6,
+                              retention_2020_2.7)
+write_csv(retention_2020_2,
+          file = "datasets/retention_2020_2.csv")
+
+print(retention_2020_2)
+
+```
+
+### 2021
