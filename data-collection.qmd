@@ -1768,14 +1768,41 @@ Combining subtopics into topic data.
 ```{r}
 #| echo: false
 
-retention_2020_5 <- bind_rows(retention_2020_5.1,
-                              retention_2020_5.2,
-                              retention_2020_5.3,
-                              retention_2020_5.4
+retention_2021_5 <- bind_rows(retention_2021_5.1,
+                              retention_2021_5.2,
+                              retention_2021_5.3,
+                              retention_2021_5.4
                               ) %>%
-  mutate(year = 2020)
-write_csv(retention_2020_5,
-          file = "datasets/retention_2020_5.csv")
+  mutate(year = 2021)
 
-print(retention_2020_5)
+write_csv(retention_2021_5,
+          file = "datasets/retention_2021_5.csv")
+
+print(retention_2021_5)
+```
+
+### Two Year Data
+
+```{r}
+retention_5 <- bind_rows(retention_2020_5,
+                         retention_2021_5)
+
+write_csv(retention_5,
+          file = "datasets/retention_5.csv")
+
+print(retention_5)
+```
+
+## Combination of Retention Data
+
+```{r}
+retention <- bind_rows(retention_2,
+                       retention_3,
+                       retention_4,
+                       retention_5)
+
+write_csv(retention,
+          file = "datasets/retention.csv")
+
+print(retention)
 ```
