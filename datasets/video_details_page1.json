@@ -1,0 +1,2927 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "keo9lVhY0giHL-vNFtPxLPGUsg4",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "dpgjz2LzB9v3z2GvGU5041ESmBE",
+      "id": "y7zRv0bPAt4",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:25:41Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Bidang Koordinat",
+        "description": "Video ini menjelaskan konsep-konsep tentang bidang #koordinat atau koordinat #kartesius. Lebih lanjut, video ini juga menjelaskan bagaimana menggambar #grafik pada bidang koordinat.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/y7zRv0bPAt4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/y7zRv0bPAt4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/y7zRv0bPAt4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/y7zRv0bPAt4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "bidang koordinat"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Bidang Koordinat",
+          "description": "Video ini menjelaskan konsep-konsep tentang bidang #koordinat atau koordinat #kartesius. Lebih lanjut, video ini juga menjelaskan bagaimana menggambar #grafik pada bidang koordinat."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT5M37S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "wSY4N3eUAPDZHx2cVSSA9rXV11U",
+      "id": "8_HqAYKZZ_I",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:28:37Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Rumus Jarak",
+        "description": "Video ini diawali dengan eksplorasi untuk menemukan rumus #jarak antara dua titik pada bidang #koordinat dengan menggunakan Teorema #Pythagoras. Setelah itu, video ini juga mendemonstrasikan bagaimana menggunakan rumus tersebut untuk menentukan jarak antara dua titik yang diketahui koordinatnya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/8_HqAYKZZ_I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/8_HqAYKZZ_I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/8_HqAYKZZ_I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/8_HqAYKZZ_I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "bidang koordinat",
+          "rumus jarak",
+          "Teorema Pythagoras"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Rumus Jarak",
+          "description": "Video ini diawali dengan eksplorasi untuk menemukan rumus #jarak antara dua titik pada bidang #koordinat dengan menggunakan Teorema #Pythagoras. Setelah itu, video ini juga mendemonstrasikan bagaimana menggunakan rumus tersebut untuk menentukan jarak antara dua titik yang diketahui koordinatnya."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT3M57S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CwuUu4sj5__V3jT2iTcfzEccTtU",
+      "id": "errB7Ku0HyQ",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:30:27Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Rumus Titik Tengah",
+        "description": "Video ini diawali dengan eksplorasi untuk menemukan titik tengah ruas #garis yang menghubungkan dua titik pada bidang #koordinat dengan menggunakan konsep kekongruenan #segitiga. Setelah itu, video ini memberikan contoh bagaimana menentukan titik tengah tengah antara dua titik yang diketahui koordinatnya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/errB7Ku0HyQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/errB7Ku0HyQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/errB7Ku0HyQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/errB7Ku0HyQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "bidang koordinat",
+          "rumus titik tengah",
+          "kongruen"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Rumus Titik Tengah",
+          "description": "Video ini diawali dengan eksplorasi untuk menemukan titik tengah ruas #garis yang menghubungkan dua titik pada bidang #koordinat dengan menggunakan konsep kekongruenan #segitiga. Setelah itu, video ini memberikan contoh bagaimana menentukan titik tengah tengah antara dua titik yang diketahui koordinatnya."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT4M6S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "rC8w1M58c-q_cT1SQhqSis_Fi4k",
+      "id": "L60C_wcLDHU",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:34:04Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Grafik dan Plot Titik",
+        "description": "Video ini menjelaskan definisi #grafik dari #persamaan dua variabel. Lebih lanjut, video ini juga menjelaskan bagaimana menggambar grafik persamaan #linear dan #kuadrat dengan cara melakukan plot titik-titiknya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/L60C_wcLDHU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/L60C_wcLDHU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/L60C_wcLDHU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/L60C_wcLDHU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "grafik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Grafik dan Plot Titik",
+          "description": "Video ini menjelaskan definisi #grafik dari #persamaan dua variabel. Lebih lanjut, video ini juga menjelaskan bagaimana menggambar grafik persamaan #linear dan #kuadrat dengan cara melakukan plot titik-titiknya."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT5M16S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "5GV26MhK0KxnA3ID-Xa3hw9Xr54",
+      "id": "Jv4y4Z4zeRc",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:35:44Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Titik Potong Grafik dengan Sumbu-Sumbu Koordinat",
+        "description": "Video ini menjelaskan cara menentukan perpotongan #grafik dengan sumbu-x dan sumbu-y. Setelah itu, video ini juga memberikan contoh bagaimana menentukan perpotongan #elips dengan sumbu-sumbu #koordinat tersebut.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Jv4y4Z4zeRc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Jv4y4Z4zeRc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Jv4y4Z4zeRc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Jv4y4Z4zeRc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "grafik",
+          "sumbu koordinat"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Titik Potong Grafik dengan Sumbu-Sumbu Koordinat",
+          "description": "Video ini menjelaskan cara menentukan perpotongan #grafik dengan sumbu-x dan sumbu-y. Setelah itu, video ini juga memberikan contoh bagaimana menentukan perpotongan #elips dengan sumbu-sumbu #koordinat tersebut."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT3M55S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "6f9oO6U307vDCfU9mZWK5DYFpDs",
+      "id": "7Ak8vzFzN_Y",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:37:47Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan Lingkaran",
+        "description": "Apa #persamaan dari suatu lingkaran? Video ini menunjukkan eksplorasi untuk menemukan persamaan dari suatu #lingkaran dengan menggunakan rumus #jarak. Setelah itu, video ini menjelaskan bagaimana menggambar grafik dari suatu lingkaran dengan terlebih dahulu mengidentifikasi jari-jari dan titik pusatnya dari persamaan lingkaran tersebut. Lebih lanjut, video ini juga memberikan contoh-contoh pengerjaan soal terkait dengan persamaan lingkaran.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7Ak8vzFzN_Y/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7Ak8vzFzN_Y/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7Ak8vzFzN_Y/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "grafik",
+          "lingkaran",
+          "irisan kerucut"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan Lingkaran",
+          "description": "Apa #persamaan dari suatu lingkaran? Video ini menunjukkan eksplorasi untuk menemukan persamaan dari suatu #lingkaran dengan menggunakan rumus #jarak. Setelah itu, video ini menjelaskan bagaimana menggambar grafik dari suatu lingkaran dengan terlebih dahulu mengidentifikasi jari-jari dan titik pusatnya dari persamaan lingkaran tersebut. Lebih lanjut, video ini juga memberikan contoh-contoh pengerjaan soal terkait dengan persamaan lingkaran."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT10M10S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "QFhKqiYYQXI9kbkvy1NUsXwJJcQ",
+      "id": "vr7jLRIA7C0",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:40:33Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Simetri",
+        "description": "Video ini menjelaskan karakteristik persamaan yang #simetris terhadap sumbu-sumbu #koordinat dan titik asal O(0, 0). Setelah itu, video ini memberikan contoh bagaimana memanfaatkan sifat #simetri tersebut untuk menggambar grafik dari suatu persamaan.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vr7jLRIA7C0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vr7jLRIA7C0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vr7jLRIA7C0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vr7jLRIA7C0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "grafik",
+          "persamaan",
+          "simetri",
+          "elips"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Simetri",
+          "description": "Video ini menjelaskan karakteristik persamaan yang #simetris terhadap sumbu-sumbu #koordinat dan titik asal O(0, 0). Setelah itu, video ini memberikan contoh bagaimana memanfaatkan sifat #simetri tersebut untuk menggambar grafik dari suatu persamaan."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT5M2S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Dkcwmw319bik_ffbTYDzPMI9xqE",
+      "id": "qxsXKYJRgJI",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:47:10Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Gradien Garis",
+        "description": "Video ini diawali dengan memberikan beberapa contoh fenomena atau permasalahan sehari-hari yang dapat dimodelkan dengan menggunakan suatu #garis. Setelah itu, video ini menjelaskan #definisi dari #gradien dan memberikan contoh bagaimana menentukan gradien suatu garis yang melalui dua titik.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qxsXKYJRgJI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qxsXKYJRgJI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qxsXKYJRgJI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qxsXKYJRgJI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "garis",
+          "gradien"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Gradien Garis",
+          "description": "Video ini diawali dengan memberikan beberapa contoh fenomena atau permasalahan sehari-hari yang dapat dimodelkan dengan menggunakan suatu #garis. Setelah itu, video ini menjelaskan #definisi dari #gradien dan memberikan contoh bagaimana menentukan gradien suatu garis yang melalui dua titik."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT3M58S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "MJkIr0BTAlpy_QlceYfs7pdEO60",
+      "id": "nV01VpbjQLQ",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:49:29Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan Garis",
+        "description": "Video ini diawali dengan eksplorasi untuk menemukan #persamaan suatu #garis yang memiliki #gradien tertentu dan melalui suatu titik pada bidang koordinat. Setelah itu, video ini juga memberikan contoh bagaimana menggunakan persamaan garis tersebut. Lebih lanjut, video ini juga membahas persamaan garis #vertikal dan #horizontal, serta persamaan umum garis.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nV01VpbjQLQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nV01VpbjQLQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nV01VpbjQLQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nV01VpbjQLQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "garis",
+          "persamaan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan Garis",
+          "description": "Video ini diawali dengan eksplorasi untuk menemukan #persamaan suatu #garis yang memiliki #gradien tertentu dan melalui suatu titik pada bidang koordinat. Setelah itu, video ini juga memberikan contoh bagaimana menggunakan persamaan garis tersebut. Lebih lanjut, video ini juga membahas persamaan garis #vertikal dan #horizontal, serta persamaan umum garis."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT6M22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "DM8gdaP30TSUYp06SCheQStBLSs",
+      "id": "kny1ZHg4tyM",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:51:53Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Garis-Garis Sejajar dan Tegak Lurus",
+        "description": "Bagaimana #persamaan dan #gradien dari garis-garis yang #sejajar dan saling tegak lurus? Video ini menjelaskan bagaimana menentukan persamaan dari suatu garis yang sejajar atau tegak lurus terhadap garis lain.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/kny1ZHg4tyM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/kny1ZHg4tyM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/kny1ZHg4tyM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "garis",
+          "sejajar",
+          "tegak lurus"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Garis-Garis Sejajar dan Tegak Lurus",
+          "description": "Bagaimana #persamaan dan #gradien dari garis-garis yang #sejajar dan saling tegak lurus? Video ini menjelaskan bagaimana menentukan persamaan dari suatu garis yang sejajar atau tegak lurus terhadap garis lain."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT9M17S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "k3IEfS-Bksvh9bkprselS4yXJqE",
+      "id": "2Wsb2KmeD04",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:54:49Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Persamaan Kuadrat dengan Pemfaktoran",
+        "description": "Video ini diawali dengan menjelaskan definisi #persamaan #kuadrat dan sifat hasil kali nol. Setelah itu, video ini membahas bagaimana menyelesaikan persamaan kuadrat dengan menggunakan metode #pemfaktoran atau #faktorisasi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2Wsb2KmeD04/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2Wsb2KmeD04/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2Wsb2KmeD04/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2Wsb2KmeD04/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan kuadrat",
+          "pemfaktoran",
+          "faktorisasi"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Persamaan Kuadrat dengan Pemfaktoran",
+          "description": "Video ini diawali dengan menjelaskan definisi #persamaan #kuadrat dan sifat hasil kali nol. Setelah itu, video ini membahas bagaimana menyelesaikan persamaan kuadrat dengan menggunakan metode #pemfaktoran atau #faktorisasi."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT4M52S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "GU3s_SQWWuyWoPSEohblFJcyBXs",
+      "id": "u-qsNS-65pQ",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:57:05Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Persamaan Kuadrat dengan Melengkapkan Kuadrat",
+        "description": "Video ini dimulai dengan penjelasan tentang bagaimana melengkapkan #kuadrat dari bentuk #aljabar. Setelah itu, video ini mendemonstrasikan bagaimana menyelesaikan #persamaan kuadrat dengan cara melengkapkan kuadrat.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/u-qsNS-65pQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/u-qsNS-65pQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/u-qsNS-65pQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/u-qsNS-65pQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan kuadrat",
+          "melengkapkan kuadrat"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Persamaan Kuadrat dengan Melengkapkan Kuadrat",
+          "description": "Video ini dimulai dengan penjelasan tentang bagaimana melengkapkan #kuadrat dari bentuk #aljabar. Setelah itu, video ini mendemonstrasikan bagaimana menyelesaikan #persamaan kuadrat dengan cara melengkapkan kuadrat."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT6M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "HXLbkze40ILqJXixZXaX1w15mI4",
+      "id": "hQTDiy0X4eo",
+      "snippet": {
+        "publishedAt": "2020-09-14T07:59:30Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Persamaan Kuadrat dengan Rumus Kuadrat",
+        "description": "Video ini diawali dengan eksplorasi untuk menemukan rumus #kuadrat atau juga sering disebut dengan #rumus abc. Setelah itu, video ini memberikan contoh bagaimana menggunakan rumus tersebut untuk menyelesaikan persamaan kuadrat. Di akhir, video ini mengenalkan konsep #diskriminan untuk menentukan banyaknya selesaian dari suatu persamaan kuadrat.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/hQTDiy0X4eo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/hQTDiy0X4eo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/hQTDiy0X4eo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/hQTDiy0X4eo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan kuadrat",
+          "rumus kuadrat",
+          "rumus abc",
+          "diskriminan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Persamaan Kuadrat dengan Rumus Kuadrat",
+          "description": "Video ini diawali dengan eksplorasi untuk menemukan rumus #kuadrat atau juga sering disebut dengan #rumus abc. Setelah itu, video ini memberikan contoh bagaimana menggunakan rumus tersebut untuk menyelesaikan persamaan kuadrat. Di akhir, video ini mengenalkan konsep #diskriminan untuk menentukan banyaknya selesaian dari suatu persamaan kuadrat."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT10M12S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "M0DsiwXbJKkMTzQSDP5Vud26C0M",
+      "id": "WZVKP14QVgo",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:05:14Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Pemodelan dengan Persamaan Kuadrat",
+        "description": "Video ini menunjukkan penggunaan #persamaan #kuadrat untuk memodelkan dan menyelesaikan persamasalahan sehari-hari yang terkait dengan #jarak, #kecepatan, dan #waktu.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/WZVKP14QVgo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/WZVKP14QVgo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/WZVKP14QVgo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/WZVKP14QVgo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan kuadrat",
+          "pemodelan",
+          "penerapan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Pemodelan dengan Persamaan Kuadrat",
+          "description": "Video ini menunjukkan penggunaan #persamaan #kuadrat untuk memodelkan dan menyelesaikan persamasalahan sehari-hari yang terkait dengan #jarak, #kecepatan, dan #waktu."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT5M10S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Ct8WvYiB8k66MJQEPHYlCCwO4bI",
+      "id": "DRr8kXo0Agg",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:07:13Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan Polinomial",
+        "description": "Bagaimana cara menyelesaikan #persamaan #polinomial (suku banyak)? Video ini memberikan beberapa contoh cara menyelesaikan persamaan polinomial.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DRr8kXo0Agg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DRr8kXo0Agg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DRr8kXo0Agg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DRr8kXo0Agg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan polinomial",
+          "suku banyak"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan Polinomial",
+          "description": "Bagaimana cara menyelesaikan #persamaan #polinomial (suku banyak)? Video ini memberikan beberapa contoh cara menyelesaikan persamaan polinomial."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT7M5S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CF7Xnn0sZolwX1Y-6KbEUgjtrhg",
+      "id": "br341Djn3_0",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:09:33Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan Bentuk Akar",
+        "description": "Video ini menjelaskan bagaimana cara menyelesaikan persamaan-persamaan yang memuat bentuk #akar di dalamnya. Di akhir, video ini mengajak penonton untuk berpikir secara #kritis mengenai selesaian asing dan pentingnya memeriksa kembali ketika menyelesaikan #persamaan bentuk akar.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/br341Djn3_0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/br341Djn3_0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/br341Djn3_0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/br341Djn3_0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan bentuk akar"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan Bentuk Akar",
+          "description": "Video ini menjelaskan bagaimana cara menyelesaikan persamaan-persamaan yang memuat bentuk #akar di dalamnya. Di akhir, video ini mengajak penonton untuk berpikir secara #kritis mengenai selesaian asing dan pentingnya memeriksa kembali ketika menyelesaikan #persamaan bentuk akar."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT7M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "sK0-qbpEMX04N2GkR0OONEs3HO8",
+      "id": "KJKYkGivPi8",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:12:06Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menggunakan Persamaan Bentuk Akar untuk Menyelesaikan Permasalahan Sehari-hari",
+        "description": "Apa kegunaan #persamaan bentuk #akar? Video ini memberikan contoh bagaimana persamaan bentuk akar dapat digunakan untuk memodelkan dan menyelesaikan permasalahan terkait #energi yang diperlukan oleh seseorang untuk berlari dan berenang.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KJKYkGivPi8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KJKYkGivPi8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KJKYkGivPi8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KJKYkGivPi8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan bentuk akar",
+          "energi",
+          "penerapan",
+          "pemodelan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menggunakan Persamaan Bentuk Akar untuk Menyelesaikan Permasalahan Sehari-hari",
+          "description": "Apa kegunaan #persamaan bentuk #akar? Video ini memberikan contoh bagaimana persamaan bentuk akar dapat digunakan untuk memodelkan dan menyelesaikan permasalahan terkait #energi yang diperlukan oleh seseorang untuk berlari dan berenang."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT6M29S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "t52L6ThSvInI9IlFRqBYHgyqPw4",
+      "id": "QS8l0H1BGjY",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:14:19Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan Bentuk Kuadrat",
+        "description": "Adakalanya suatu #persamaan yang rumit dapat dituliskan kembali sebagai suatu persamaan bentuk #kuadrat. Video ini menjelaskan bagaimana cara menyelesaikan persamaan seperti ini.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QS8l0H1BGjY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QS8l0H1BGjY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QS8l0H1BGjY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QS8l0H1BGjY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan bentuk kuadrat"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan Bentuk Kuadrat",
+          "description": "Adakalanya suatu #persamaan yang rumit dapat dituliskan kembali sebagai suatu persamaan bentuk #kuadrat. Video ini menjelaskan bagaimana cara menyelesaikan persamaan seperti ini."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT3M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CAjcbvfM-5CF54kam1t-W4WBHRk",
+      "id": "RF1chK7xiX0",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:15:52Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Pertidaksamaan Linear",
+        "description": "Video ini diawali dengan membandingkan #persamaan dan #pertidaksamaan untuk mengetahui perbedaannya. Setelah itu, video ini menyajikan dan membahas aturan-aturan untuk pertidaksamaan. Selanjutnya, video ini memberikan contoh bagaimana menggunakan aturan-aturan tersebut untuk menyelesaikan pertidaksamaan #linear.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/RF1chK7xiX0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/RF1chK7xiX0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/RF1chK7xiX0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/RF1chK7xiX0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "pertidaksamaan",
+          "pertidaksamaan linear"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Pertidaksamaan Linear",
+          "description": "Video ini diawali dengan membandingkan #persamaan dan #pertidaksamaan untuk mengetahui perbedaannya. Setelah itu, video ini menyajikan dan membahas aturan-aturan untuk pertidaksamaan. Selanjutnya, video ini memberikan contoh bagaimana menggunakan aturan-aturan tersebut untuk menyelesaikan pertidaksamaan #linear."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT9M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "cMrQaA3XNehGlrmej0uyfkCTzYA",
+      "id": "9KVzGWFEufI",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:19:17Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Pertidaksamaan Tak Linear",
+        "description": "Video ini dimulai dengan pembahasan #prosedur bagaimana menyelesaikan pertidaksamaan-pertidaksamaan yang tak #linear. Lebih lanjut, video ini memberikan contoh bagaimana menggunakan prosedur tersebut untuk menyelesaikan pertidaksamaan #kuadrat dan pertidaksamaan yang memuat faktor-faktor berulang.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/9KVzGWFEufI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/9KVzGWFEufI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/9KVzGWFEufI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/9KVzGWFEufI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "pertidaksamaan",
+          "pertidaksamaan tak linear"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Pertidaksamaan Tak Linear",
+          "description": "Video ini dimulai dengan pembahasan #prosedur bagaimana menyelesaikan pertidaksamaan-pertidaksamaan yang tak #linear. Lebih lanjut, video ini memberikan contoh bagaimana menggunakan prosedur tersebut untuk menyelesaikan pertidaksamaan #kuadrat dan pertidaksamaan yang memuat faktor-faktor berulang."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT14M17S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "zpuHKooVI4TY-q2N6aiYqW2ot0w",
+      "id": "PcSTCsI6zUk",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:22:33Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Pemodelan dengan Pertidaksamaan",
+        "description": "Video ini memberikan contoh bagaimana #pertidaksamaan dapat digunakan untuk memodelkan dan menyelesaikan permasalah sehari-hari. Contoh yang digunakan dalam video ini adalah permasalahan #biaya telepon.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PcSTCsI6zUk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PcSTCsI6zUk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PcSTCsI6zUk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/PcSTCsI6zUk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "pertidaksamaan",
+          "pemodelan",
+          "penerapan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Pemodelan dengan Pertidaksamaan",
+          "description": "Video ini memberikan contoh bagaimana #pertidaksamaan dapat digunakan untuk memodelkan dan menyelesaikan permasalah sehari-hari. Contoh yang digunakan dalam video ini adalah permasalahan #biaya telepon."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT3M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "wse6RL-XOZ43NQRElRCF8Eyy-XY",
+      "id": "uDQAWZsh3ns",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:24:11Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan Nilai Mutlak",
+        "description": "Video ini diawali dengan mengulas kembali konsep nilai #mutlak dan menjelaskan sifat yang digunakan untuk menyelesaikan #persamaan nilai mutlak. Setelah itu, video ini memberikan contoh bagaimana menyelesaikan persamaan nilai mutlak dengan menggunakan prinsip tersebut.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/uDQAWZsh3ns/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/uDQAWZsh3ns/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/uDQAWZsh3ns/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/uDQAWZsh3ns/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "Aljabar",
+          "persamaan",
+          "nilai mutlak"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan Nilai Mutlak",
+          "description": "Video ini diawali dengan mengulas kembali konsep nilai #mutlak dan menjelaskan sifat yang digunakan untuk menyelesaikan #persamaan nilai mutlak. Setelah itu, video ini memberikan contoh bagaimana menyelesaikan persamaan nilai mutlak dengan menggunakan prinsip tersebut."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT3M54S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "NumyymQa3Sn19mOqfvzYjrBAiNw",
+      "id": "qXBG2JV7tms",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:26:00Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Pertidaksamaan Nilai Mutlak",
+        "description": "Video ini dimulai dengan penjelasan sifat-sifat #pertidaksamaan nilai #mutlak. Setelah itu, video ini memberikan contoh bagaimana menggunakan sifat-sifat tersebut untuk menyelesaikan pertidaksamaan nilai mutlak.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qXBG2JV7tms/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qXBG2JV7tms/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qXBG2JV7tms/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qXBG2JV7tms/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "pertidaksamaan",
+          "nilai mutlak"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Pertidaksamaan Nilai Mutlak",
+          "description": "Video ini dimulai dengan penjelasan sifat-sifat #pertidaksamaan nilai #mutlak. Setelah itu, video ini memberikan contoh bagaimana menggunakan sifat-sifat tersebut untuk menyelesaikan pertidaksamaan nilai mutlak."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT5M3S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "L9V1yHr6zeiXKUCP-fDDDYxg4Pg",
+      "id": "v4NPzGXcbaw",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:28:41Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Persamaan dengan Metode Grafik",
+        "description": "Video ini menjelaskan bagaimana menyelesaikan #persamaan dengan menggunakan metode #grafik. Untuk melakukannya, #teknologi #kalkulator grafik digunakan untuk menggambar grafik persamaan yang diberikan.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/v4NPzGXcbaw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/v4NPzGXcbaw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/v4NPzGXcbaw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/v4NPzGXcbaw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "persamaan",
+          "metode grafik",
+          "kalkulator",
+          "grafik",
+          "Desmos",
+          "GeoGebra"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Persamaan dengan Metode Grafik",
+          "description": "Video ini menjelaskan bagaimana menyelesaikan #persamaan dengan menggunakan metode #grafik. Untuk melakukannya, #teknologi #kalkulator grafik digunakan untuk menggambar grafik persamaan yang diberikan."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT8M14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "nUBf3EDK-0he-5iDf0RZ5HQtJEw",
+      "id": "fm6Dv9POaQk",
+      "snippet": {
+        "publishedAt": "2020-09-14T08:31:40Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyelesaikan Pertidaksamaan dengan Metode Grafik",
+        "description": "Video ini menjelaskan bagaimana #teknologi #kalkulator #grafik dapat digunakan untuk menyelesaikan #pertidaksamaan.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/fm6Dv9POaQk/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/fm6Dv9POaQk/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/fm6Dv9POaQk/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/fm6Dv9POaQk/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "pertidaksamaan",
+          "metode grafik",
+          "kalkulator"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyelesaikan Pertidaksamaan dengan Metode Grafik",
+          "description": "Video ini menjelaskan bagaimana #teknologi #kalkulator #grafik dapat digunakan untuk menyelesaikan #pertidaksamaan."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT4M8S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "4h5vTyfc_SOoVJ6y46oUhgSjauQ",
+      "id": "7g35w-sL_JA",
+      "snippet": {
+        "publishedAt": "2020-10-07T15:43:37Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Fungsi",
+        "description": "Video ini menunjukkan beberapa #penerapan #fungsi dalam kehidupan sehari-hari. Selain itu, #definisi fungsi juga dijelaskan dalam video ini. Terakhir, video ini mendemonstrasikan bagaimana menuliskan #notasi fungsi jika diketahui aturan fungsi tersebut.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/7g35w-sL_JA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/7g35w-sL_JA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/7g35w-sL_JA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/7g35w-sL_JA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "definisi",
+          "notasi",
+          "penerapan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Fungsi",
+          "description": "Video ini menunjukkan beberapa #penerapan #fungsi dalam kehidupan sehari-hari. Selain itu, #definisi fungsi juga dijelaskan dalam video ini. Terakhir, video ini mendemonstrasikan bagaimana menuliskan #notasi fungsi jika diketahui aturan fungsi tersebut."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT7M24S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "gViZXwG-MgA4uoizPIy1EjWMgiY",
+      "id": "a3pMCY75leA",
+      "snippet": {
+        "publishedAt": "2020-10-07T15:49:05Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menentukan Nilai Fungsi",
+        "description": "Bagaimana menentukan nilai suatu #fungsi? Jawabannya dibahas dalam video ini. Selain itu, video ini juga mendemonstrasikan bagaimana menyelesaikan permasalahan sehari-hari dengan menggunakan fungsi sepotong-sepotong.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/a3pMCY75leA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/a3pMCY75leA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/a3pMCY75leA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/a3pMCY75leA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "fungsi",
+          "aljabar"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menentukan Nilai Fungsi",
+          "description": "Bagaimana menentukan nilai suatu #fungsi? Jawabannya dibahas dalam video ini. Selain itu, video ini juga mendemonstrasikan bagaimana menyelesaikan permasalahan sehari-hari dengan menggunakan fungsi sepotong-sepotong."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT7M21S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "TyRn_J5bUQcOejzTVG5jpHEGFTw",
+      "id": "qmTXyVwt0F4",
+      "snippet": {
+        "publishedAt": "2020-10-07T15:54:02Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Daerah Asal Fungsi",
+        "description": "Video ini membahas prinsip dan prosedur bagaimana menenentukan daerah asal atau #domain suatu #fungsi. Untuk melakukannya, video ini memberikan contoh bagaimana menentukan daerah asal fungsi-fungsi #polinomial, #rasional, #akar, dan #pecahan.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qmTXyVwt0F4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qmTXyVwt0F4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qmTXyVwt0F4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qmTXyVwt0F4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "domain",
+          "daerah asal",
+          "fungsi polinomial",
+          "fungsi rasional",
+          "fungsi akar",
+          "pecahan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Daerah Asal Fungsi",
+          "description": "Video ini membahas prinsip dan prosedur bagaimana menenentukan daerah asal atau #domain suatu #fungsi. Untuk melakukannya, video ini memberikan contoh bagaimana menentukan daerah asal fungsi-fungsi #polinomial, #rasional, #akar, dan #pecahan."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT5M45S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "Zfob9Mie3M3X07P9dV8zUNaRk4Y",
+      "id": "BB7a6alY_Kg",
+      "snippet": {
+        "publishedAt": "2020-10-07T16:00:49Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menyatakan Fungsi",
+        "description": "Video ini menjelaskan empat cara menyatakan suatu #fungsi, yaitu dengan kata-kata (secara #verbal), #rumus (secara aljabar), #grafik (secara visual), dan #tabel (secara #numerik). Empat cara menyatakan fungsi tersebut selanjutnya digunakan untuk memodelkan dan menyelesaikan masalah sehari-hari mengenai pengisian air kolam.\n\nTautan: https://www.ted.com/talks/tabetha_boyajian_the_most_mysterious_star_in_the_universe",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BB7a6alY_Kg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BB7a6alY_Kg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BB7a6alY_Kg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BB7a6alY_Kg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik",
+          "rumus",
+          "tabel",
+          "numerik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menyatakan Fungsi",
+          "description": "Video ini menjelaskan empat cara menyatakan suatu #fungsi, yaitu dengan kata-kata (secara #verbal), #rumus (secara aljabar), #grafik (secara visual), dan #tabel (secara #numerik). Empat cara menyatakan fungsi tersebut selanjutnya digunakan untuk memodelkan dan menyelesaikan masalah sehari-hari mengenai pengisian air kolam.\n\nTautan: https://www.ted.com/talks/tabetha_boyajian_the_most_mysterious_star_in_the_universe"
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT4M58S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "iCwMLMxf0IPmr6D_JCBCRNMHBsQ",
+      "id": "aHo1kbccgLM",
+      "snippet": {
+        "publishedAt": "2020-10-08T11:55:27Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menggambar Grafik Fungsi dengan Plot Titik",
+        "description": "Video ini menjelaskan bagaimana menggambar #grafik #fungsi dengan melakukan plot titik.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aHo1kbccgLM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aHo1kbccgLM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aHo1kbccgLM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/aHo1kbccgLM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menggambar Grafik Fungsi dengan Plot Titik",
+          "description": "Video ini menjelaskan bagaimana menggambar #grafik #fungsi dengan melakukan plot titik."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT6M2S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ZyvX2FkIgSYt8RvTSyIEMu4t3zA",
+      "id": "Lmx4Bc7WhHU",
+      "snippet": {
+        "publishedAt": "2020-10-08T12:02:19Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menggambar Grafik Fungsi dengan Kalkulator Grafik",
+        "description": "Video ini mendemonstrasikan bagaimana menggambar #grafik #fungsi dengan menggunakan #kalkulator grafik.\n\nTautan: https://www.desmos.com/calculator",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Lmx4Bc7WhHU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Lmx4Bc7WhHU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Lmx4Bc7WhHU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik",
+          "kalkulator"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menggambar Grafik Fungsi dengan Kalkulator Grafik",
+          "description": "Video ini mendemonstrasikan bagaimana menggambar #grafik #fungsi dengan menggunakan #kalkulator grafik.\n\nTautan: https://www.desmos.com/calculator"
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT9M36S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "HJ_0NiXPpRDPUozmmUZGSD5JViI",
+      "id": "Aa1Zd1nqAaM",
+      "snippet": {
+        "publishedAt": "2020-10-20T16:39:24Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menggambar Grafik Fungsi Sepotong-Sepotong",
+        "description": "Video ini menjelaskan bagaimana menggambar #grafik #fungsi sepotong-sepotong. Selain itu, video ini juga memberikan contoh bagaimana fungsi tersebut dapat digunakan untuk memodelkan dan menyelesaikan masalah sehari-hari.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/Aa1Zd1nqAaM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/Aa1Zd1nqAaM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/Aa1Zd1nqAaM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/Aa1Zd1nqAaM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/Aa1Zd1nqAaM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "grafik",
+          "fungsi",
+          "penerapan",
+          "aplikasi",
+          "pemodelan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menggambar Grafik Fungsi Sepotong-Sepotong",
+          "description": "Video ini menjelaskan bagaimana menggambar #grafik #fungsi sepotong-sepotong. Selain itu, video ini juga memberikan contoh bagaimana fungsi tersebut dapat digunakan untuk memodelkan dan menyelesaikan masalah sehari-hari."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT8M41S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "gIC6YxgIhZaNvVES7k1nWGgmgxQ",
+      "id": "2Xjq_Rc8csw",
+      "snippet": {
+        "publishedAt": "2020-10-08T12:12:13Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Uji Garis Vertikal",
+        "description": "Bagaimana menentukan apakah suatu #kurva pada bidang #koordinat merupakan #grafik suatu #fungsi? Video ini menjelaskan bagaimana menggunakan Uji #Garis Vertikal untuk menentukan apakah suatu kurva merupakan grafik fungsi atau bukan.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2Xjq_Rc8csw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2Xjq_Rc8csw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2Xjq_Rc8csw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2Xjq_Rc8csw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik",
+          "uji garis vertikal"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Uji Garis Vertikal",
+          "description": "Bagaimana menentukan apakah suatu #kurva pada bidang #koordinat merupakan #grafik suatu #fungsi? Video ini menjelaskan bagaimana menggunakan Uji #Garis Vertikal untuk menentukan apakah suatu kurva merupakan grafik fungsi atau bukan."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT3M33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "oFfVRYvZ6ybnMuowCMfm6BlPZVg",
+      "id": "n_QVgE8mGic",
+      "snippet": {
+        "publishedAt": "2020-10-08T12:16:43Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Persamaan dan Fungsi",
+        "description": "Video ini menjelaskan bagaimana menentukan apakah suatu #persamaan merupakan #fungsi atau bukan.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/n_QVgE8mGic/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/n_QVgE8mGic/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/n_QVgE8mGic/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/n_QVgE8mGic/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "persamaan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Persamaan dan Fungsi",
+          "description": "Video ini menjelaskan bagaimana menentukan apakah suatu #persamaan merupakan #fungsi atau bukan."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT4M27S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "MJ8-L59ns2wJqD9p6eX5WRmJ55M",
+      "id": "aMwB3YzdnLY",
+      "snippet": {
+        "publishedAt": "2020-10-08T12:20:37Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Beberapa Fungsi dan Grafiknya",
+        "description": "Video ini menunjukkan beberapa #fungsi dan grafiknya. Fungsi-fungsi tersebut adalah fungsi #linear, fungsi berpangkat, fungsi akar, fungsi kebalikan, fungsi nilai mutlak, dan fungsi bilangan bulat terbesar.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/aMwB3YzdnLY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/aMwB3YzdnLY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/aMwB3YzdnLY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/aMwB3YzdnLY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik",
+          "fungsi linear",
+          "fungsi berpangkat",
+          "fungsi akar",
+          "fungsi kebalikan",
+          "fungsi nilai mutlak",
+          "bilangan bulat"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Beberapa Fungsi dan Grafiknya",
+          "description": "Video ini menunjukkan beberapa #fungsi dan grafiknya. Fungsi-fungsi tersebut adalah fungsi #linear, fungsi berpangkat, fungsi akar, fungsi kebalikan, fungsi nilai mutlak, dan fungsi bilangan bulat terbesar."
+        }
+      },
+      "contentDetails": {
+        "duration": "PT3M24S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "l_vBJDmG14VjvURGXrCjWEOfEOM",
+      "id": "MD5LDDmH3Lo",
+      "snippet": {
+        "publishedAt": "2020-10-18T22:10:33Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Nilai Fungsi, Daerah Asal dan Daerah Hasil Fungsi",
+        "description": "Video ini menjelaskan bagaimana menentukan nilai-nilai #fungsi dengan menggunakan #grafik fungsi tersebut. Selain itu, video ini juga membahas bagaimana menentukan daerah asal atau #domain serta daerah hasil atau #range suatu fungsi dengan mengamati grafiknya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/MD5LDDmH3Lo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/MD5LDDmH3Lo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/MD5LDDmH3Lo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/MD5LDDmH3Lo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/MD5LDDmH3Lo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik",
+          "domain",
+          "range"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Nilai Fungsi, Daerah Asal dan Daerah Hasil Fungsi",
+          "description": "Video ini menjelaskan bagaimana menentukan nilai-nilai #fungsi dengan menggunakan #grafik fungsi tersebut. Selain itu, video ini juga membahas bagaimana menentukan daerah asal atau #domain serta daerah hasil atau #range suatu fungsi dengan mengamati grafiknya."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT7M22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "r5i3jHsodUQBRYh_s2riJUc8i5Y",
+      "id": "pSPHTfd-GA4",
+      "snippet": {
+        "publishedAt": "2020-10-18T22:22:35Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Menggunakan Grafik Fungsi untuk Menyelesaikan Persamaan dan Pertidaksamaan",
+        "description": "Video ini menjelaskan bagaimana menyelesaikan #persamaan dan #pertidaksamaan dengan menggunakan #grafik #fungsi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/pSPHTfd-GA4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/pSPHTfd-GA4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/pSPHTfd-GA4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/pSPHTfd-GA4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/pSPHTfd-GA4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "grafik",
+          "fungsi",
+          "persamaan",
+          "pertidaksamaan"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Menggunakan Grafik Fungsi untuk Menyelesaikan Persamaan dan Pertidaksamaan",
+          "description": "Video ini menjelaskan bagaimana menyelesaikan #persamaan dan #pertidaksamaan dengan menggunakan #grafik #fungsi."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT8M59S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "cPbHZ9VZ-Icktrd8iH93XKAOk0U",
+      "id": "288bRpvZSsg",
+      "snippet": {
+        "publishedAt": "2020-10-18T22:37:07Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Fungsi Naik dan Fungsi Turun",
+        "description": "Apa pengertian #fungsi naik dan fungsi turun? Video ini membahas pengertian fungsi naik dan fungsi turun. Selain itu, video ini juga mendemonstrasikan bagaimana menentukan #interval ketika suatu fungsi naik atau turun dengan mengamati grafiknya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/288bRpvZSsg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/288bRpvZSsg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/288bRpvZSsg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/288bRpvZSsg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/288bRpvZSsg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "fungsi",
+          "aljabar",
+          "grafik",
+          "fungsi naik",
+          "fungsi turun"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Fungsi Naik dan Fungsi Turun",
+          "description": "Apa pengertian #fungsi naik dan fungsi turun? Video ini membahas pengertian fungsi naik dan fungsi turun. Selain itu, video ini juga mendemonstrasikan bagaimana menentukan #interval ketika suatu fungsi naik atau turun dengan mengamati grafiknya."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT11M22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "IuFm5I4svP3KUO_b_bQAxXB3iPg",
+      "id": "AmIW3vUhY0E",
+      "snippet": {
+        "publishedAt": "2020-10-18T22:52:56Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Maksimum dan Minimum Lokal Suatu Fungsi",
+        "description": "Video ini menjelaskan pengertian #maksimum dan #minimum lokal suatu #fungsi. Selain itu, video ini juga membahas bagaimana mencari nilai maksimum dan minimum lokal tersebut dengan menggunakan #kalkulator #grafik.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/AmIW3vUhY0E/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/AmIW3vUhY0E/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/AmIW3vUhY0E/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/AmIW3vUhY0E/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/AmIW3vUhY0E/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "fungsi",
+          "aljabar",
+          "maksimum lokal",
+          "minimum lokal",
+          "grafik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Maksimum dan Minimum Lokal Suatu Fungsi",
+          "description": "Video ini menjelaskan pengertian #maksimum dan #minimum lokal suatu #fungsi. Selain itu, video ini juga membahas bagaimana mencari nilai maksimum dan minimum lokal tersebut dengan menggunakan #kalkulator #grafik."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT12M13S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "NGz0HjU6bCN4vCyb09T0BFUd1GQ",
+      "id": "LIkQgdMtovQ",
+      "snippet": {
+        "publishedAt": "2020-10-18T23:46:43Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Fungsi Linear",
+        "description": "Video ini menjelaskan pengertian #fungsi #linear. Selain itu, video ini juga mendemonstrasikan bagaimana mengidentifikasi fungsi-fungsi linear dan bagaimana mensketsa grafiknya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/LIkQgdMtovQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/LIkQgdMtovQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/LIkQgdMtovQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/LIkQgdMtovQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/LIkQgdMtovQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "fungsi linear",
+          "grafik",
+          "gradien"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Fungsi Linear",
+          "description": "Video ini menjelaskan pengertian #fungsi #linear. Selain itu, video ini juga mendemonstrasikan bagaimana mengidentifikasi fungsi-fungsi linear dan bagaimana mensketsa grafiknya."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT5M2S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "-p__arIhbBwLFGk90lQyo1mbZmY",
+      "id": "b8SV9Xk5P0Q",
+      "snippet": {
+        "publishedAt": "2020-10-18T23:52:17Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Gradien dan Laju Perubahan",
+        "description": "Video ini menjelaskan bagaimana mengidentifikasi #gradien dan laju perubahan #fungsi #linear dengan menggunakan persamaan atau notasi fungsinya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/b8SV9Xk5P0Q/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/b8SV9Xk5P0Q/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/b8SV9Xk5P0Q/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/b8SV9Xk5P0Q/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/b8SV9Xk5P0Q/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "fungsi linear",
+          "gradien"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Gradien dan Laju Perubahan",
+          "description": "Video ini menjelaskan bagaimana mengidentifikasi #gradien dan laju perubahan #fungsi #linear dengan menggunakan persamaan atau notasi fungsinya."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT4M26S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "E38HkzKKhAtt5CY52jExgbU-7Pk",
+      "id": "tsca4HeUPyA",
+      "snippet": {
+        "publishedAt": "2020-10-18T23:55:17Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Membuat dan Menggunakan Model-Model Linear",
+        "description": "Video ini memberikan contoh-contoh bagaimana memodelkan dan menyelesaikan permasalahan sehari-hari dengan menggunakan #fungsi #linear.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tsca4HeUPyA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tsca4HeUPyA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tsca4HeUPyA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tsca4HeUPyA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tsca4HeUPyA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "fungsi linear",
+          "pemodelan",
+          "penerapan",
+          "aplikasi"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Membuat dan Menggunakan Model-Model Linear",
+          "description": "Video ini memberikan contoh-contoh bagaimana memodelkan dan menyelesaikan permasalahan sehari-hari dengan menggunakan #fungsi #linear."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT9M41S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "-SOGDbS_uVZt6VhGVQm0Lvn3G2o",
+      "id": "jytZgg-oQyM",
+      "snippet": {
+        "publishedAt": "2020-10-19T03:57:46Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Transformasi Fungsi: Pergeseran Vertikal",
+        "description": "Video ini menjelaskan bagaimana menggunakan prinsip salah satu #transformasi #fungsi, yaitu pergeseran atau #translasi vertikal, untuk menggambar grafik fungsi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/jytZgg-oQyM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/jytZgg-oQyM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/jytZgg-oQyM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/jytZgg-oQyM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/jytZgg-oQyM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "fungsi",
+          "grafik",
+          "transformasi",
+          "translasi"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Transformasi Fungsi: Pergeseran Vertikal",
+          "description": "Video ini menjelaskan bagaimana menggunakan prinsip salah satu #transformasi #fungsi, yaitu pergeseran atau #translasi vertikal, untuk menggambar grafik fungsi."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT3M36S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "b2uQWS8AgyQRQZ75YUOE_7v_dxI",
+      "id": "rZEOxQWltIs",
+      "snippet": {
+        "publishedAt": "2020-10-19T03:58:15Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Transformasi Fungsi: Pergeseran Horizontal",
+        "description": "Video ini menjelaskan bagaimana menggunakan prinsip salah satu #transformasi #fungsi, yaitu pergeseran atau #translasi horizontal, untuk mensketsa grafik suatu fungsi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/rZEOxQWltIs/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/rZEOxQWltIs/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/rZEOxQWltIs/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/rZEOxQWltIs/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/rZEOxQWltIs/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "transformasi",
+          "translasi"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Transformasi Fungsi: Pergeseran Horizontal",
+          "description": "Video ini menjelaskan bagaimana menggunakan prinsip salah satu #transformasi #fungsi, yaitu pergeseran atau #translasi horizontal, untuk mensketsa grafik suatu fungsi."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT3M56S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "BXcKzb3MrXkY7e764G8os_4xW2g",
+      "id": "5flm8zGveZ8",
+      "snippet": {
+        "publishedAt": "2020-10-19T03:58:45Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Transformasi Fungsi: Pencerminan",
+        "description": "Video ini membahas prinsip salah satu #transformasi #fungsi, yaitu #pencerminan atau #refleksi, untuk mensketsa grafik suatu fungsi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5flm8zGveZ8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5flm8zGveZ8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5flm8zGveZ8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5flm8zGveZ8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5flm8zGveZ8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "grafik",
+          "transformasi",
+          "pencerminan",
+          "refleksi"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Transformasi Fungsi: Pencerminan",
+          "description": "Video ini membahas prinsip salah satu #transformasi #fungsi, yaitu #pencerminan atau #refleksi, untuk mensketsa grafik suatu fungsi."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT2M58S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "IaEHuz1ZIkI5JPVSYdEFdHn1O98",
+      "id": "d2wI1ikAAlg",
+      "snippet": {
+        "publishedAt": "2020-10-19T03:59:26Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Transformasi Fungsi: Peregangan dan Pemampatan Vertikal",
+        "description": "Video ini menjelaskan penggunaan prinsip salah satu #transformasi #fungsi, yaitu peregangan dan pemampatan vertikal, untuk menggambar #grafik suatu fungsi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/d2wI1ikAAlg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/d2wI1ikAAlg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/d2wI1ikAAlg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/d2wI1ikAAlg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/d2wI1ikAAlg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "fungsi",
+          "aljabar",
+          "dilatasi",
+          "transformasi",
+          "grafik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Transformasi Fungsi: Peregangan dan Pemampatan Vertikal",
+          "description": "Video ini menjelaskan penggunaan prinsip salah satu #transformasi #fungsi, yaitu peregangan dan pemampatan vertikal, untuk menggambar #grafik suatu fungsi."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT5M39S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ImPA22Pxqpvsw0FdcHJnZEy-UJA",
+      "id": "A4gZgqEKshw",
+      "snippet": {
+        "publishedAt": "2020-10-19T04:00:12Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Transformasi Fungsi: Peregangan dan Pemampatan Horizontal",
+        "description": "Video ini menjelaskan bagaimana mensketsa #grafik suatu #fungsi dengan menggunakan prinsip peregangan dan pemampatan (#dilatasi) grafik.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/A4gZgqEKshw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/A4gZgqEKshw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/A4gZgqEKshw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/A4gZgqEKshw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/A4gZgqEKshw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "dilatasi",
+          "transformasi",
+          "grafik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Transformasi Fungsi: Peregangan dan Pemampatan Horizontal",
+          "description": "Video ini menjelaskan bagaimana mensketsa #grafik suatu #fungsi dengan menggunakan prinsip peregangan dan pemampatan (#dilatasi) grafik."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT2M33S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "AsKcQt_ZmxsSEdtYVm82q3FG5JA",
+      "id": "BYRBjDIZSZo",
+      "snippet": {
+        "publishedAt": "2020-10-19T04:00:36Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Fungsi Genap dan Fungsi Ganjil",
+        "description": "Apa pengertian #fungsi #genap dan fungsi #ganjil? Video ini menjelaskan pengertian tersebut dan kemudian mendemonstrasikan bagaimana mengidentifikasi suatu fungsi apakah merupakan fungsi genap, ganjil, atau bukan keduanya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/BYRBjDIZSZo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/BYRBjDIZSZo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/BYRBjDIZSZo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/BYRBjDIZSZo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/BYRBjDIZSZo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "fungsi genap",
+          "fungsi ganjil",
+          "simetri"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Fungsi Genap dan Fungsi Ganjil",
+          "description": "Apa pengertian #fungsi #genap dan fungsi #ganjil? Video ini menjelaskan pengertian tersebut dan kemudian mendemonstrasikan bagaimana mengidentifikasi suatu fungsi apakah merupakan fungsi genap, ganjil, atau bukan keduanya."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT3M14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "0Z9Cb3zNFbujBoObZMefRO5G38A",
+      "id": "oKlJDBsc_A0",
+      "snippet": {
+        "publishedAt": "2020-10-20T15:17:45Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Penjumlahan, Pengurangan, Perkalian, dan Pembagian Fungsi",
+        "description": "Video ini menjelaskan bagaimana menentukan fungsi-fungsi #penjumlahan, #pengurangan, #perkalian, dan #pembagian beserta dengan daerah asal atau domainnya. Selain itu, video ini juga mendemonstrasikan bagaimana melakukan penjumlahan #grafik #fungsi.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oKlJDBsc_A0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oKlJDBsc_A0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oKlJDBsc_A0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/oKlJDBsc_A0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/oKlJDBsc_A0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "penjumlahan",
+          "pengurangan",
+          "perkalian",
+          "pembagian",
+          "grafik"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Penjumlahan, Pengurangan, Perkalian, dan Pembagian Fungsi",
+          "description": "Video ini menjelaskan bagaimana menentukan fungsi-fungsi #penjumlahan, #pengurangan, #perkalian, dan #pembagian beserta dengan daerah asal atau domainnya. Selain itu, video ini juga mendemonstrasikan bagaimana melakukan penjumlahan #grafik #fungsi."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT7M23S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "lalUluYNZGKHWCSKyWdmvVUQ7y8",
+      "id": "FRgbKVwKp3M",
+      "snippet": {
+        "publishedAt": "2020-10-20T15:28:04Z",
+        "channelId": "UCNwGE-9KP3DfWQF_sCM2L3w",
+        "title": "Komposisi Fungsi",
+        "description": "Apa yang dimaksud dengan #komposisi #fungsi? Bagaimana menentukan komposisi dua fungsi atau lebih? Video ini menjelaskan definisi fungsi komposit dan mendemonstrasikan bagaimana menentukan komposisi dari dua atau lebih fungsi. Lebih jauh, video ini juga menjelaskan bagaimana menentukan suatu fungsi jika diketahui fungsi komposit yang disusun oleh fungsi tersebut dan satu fungsi lainnya.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/FRgbKVwKp3M/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/FRgbKVwKp3M/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/FRgbKVwKp3M/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/FRgbKVwKp3M/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/FRgbKVwKp3M/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Yosep Dwi Kristanto",
+        "tags": [
+          "aljabar",
+          "fungsi",
+          "komposisi",
+          "fungsi komposit",
+          "diagram panah",
+          "domain"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "localized": {
+          "title": "Komposisi Fungsi",
+          "description": "Apa yang dimaksud dengan #komposisi #fungsi? Bagaimana menentukan komposisi dua fungsi atau lebih? Video ini menjelaskan definisi fungsi komposit dan mendemonstrasikan bagaimana menentukan komposisi dari dua atau lebih fungsi. Lebih jauh, video ini juga menjelaskan bagaimana menentukan suatu fungsi jika diketahui fungsi komposit yang disusun oleh fungsi tersebut dan satu fungsi lainnya."
+        },
+        "defaultAudioLanguage": "id"
+      },
+      "contentDetails": {
+        "duration": "PT11M5S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular",
+        "hasCustomThumbnail": false
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 50,
+    "resultsPerPage": 50
+  }
+}

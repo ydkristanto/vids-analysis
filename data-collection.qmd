@@ -20,6 +20,78 @@ editor: visual
 
 library(tidyverse)
 library(jsonlite)
+library(knitr)
+library(kableExtra)
+```
+
+# Video Details and Snippet
+
+```         
+curl \
+  'https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails%2Csnippet&id=y7zRv0bPAt4%2C8_HqAYKZZ_I%2CerrB7Ku0HyQ%2CL60C_wcLDHU%2CJv4y4Z4zeRc%2C7Ak8vzFzN_Y%2Cvr7jLRIA7C0%2CqxsXKYJRgJI%2CnV01VpbjQLQ%2Ckny1ZHg4tyM%2C2Wsb2KmeD04%2Cu-qsNS-65pQ%2ChQTDiy0X4eo%2CWZVKP14QVgo%2CDRr8kXo0Agg%2Cbr341Djn3_0%2CKJKYkGivPi8%2CQS8l0H1BGjY%2CRF1chK7xiX0%2C9KVzGWFEufI%2CPcSTCsI6zUk%2CuDQAWZsh3ns%2CqXBG2JV7tms%2Cv4NPzGXcbaw%2Cfm6Dv9POaQk%2C7g35w-sL_JA%2Ca3pMCY75leA%2CqmTXyVwt0F4%2CBB7a6alY_Kg%2CaHo1kbccgLM%2CLmx4Bc7WhHU%2CAa1Zd1nqAaM%2C2Xjq_Rc8csw%2Cn_QVgE8mGic%2CaMwB3YzdnLY%2CMD5LDDmH3Lo%2CpSPHTfd-GA4%2C288bRpvZSsg%2CAmIW3vUhY0E%2CLIkQgdMtovQ%2Cb8SV9Xk5P0Q%2Ctsca4HeUPyA%2CjytZgg-oQyM%2CrZEOxQWltIs%2C5flm8zGveZ8%2Cd2wI1ikAAlg%2CA4gZgqEKshw%2CBYRBjDIZSZo%2CoKlJDBsc_A0%2CFRgbKVwKp3M&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```         
+curl \
+  'https://youtube.googleapis.com/youtube/v3/videos?part=contentDetails%2Csnippet&id=IYSIzMNvT0k%2ChcUC4IFisL4%2Co7p5-2gqPc4%2Ck_krAa5BcUc%2C2Ftvle6k9as%2CriRa1fv7XAo%2CfS8JmmjCg4Y%2CBSlzOjW5gsQ%2CLSsfEfKJPUA%2C7Ji0rZA-D7k%2CBZsxf1LWa38%2CKx-urubrfl4%2CTeJ_Dht6N4E%2CquoIHoqCJs4%2CyA9kwmITnkk%2CzG5DYRKRrRI%2Ch8FZ_H_zIlA%2COXRHUDd28uM%2Cs-HX0NcVGco%2CeJizsGLUFFw%2CwjQracmCEag%2Cr5Xkh25jgwY%2COiE3M7m9dxs%2CdPNrkm12e5M%2CWnE0IIO0EQ0%2CwMzpIezHdcs%2CIaUXOCf73Lg%2Cgcx2CLY3GD4%2CoHE0GKd5AZI%2CU6jWizrcoaw%2Cmu7OfNdCBE8%2C3MQ47s45dnU%2C44Cbhd1PnWI%2CEdiLL3J89eI%2Cbn91Bs6pE1o%2CZtY3D3hKjXk%2CtRAaFUTA_-A%2CPOXB-v2vNlo%2CkgQncoPA9zE%2CZk_xFgb6Y7Y%2CzNyioBkGDUU%2CzW6ATi1uYhk&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+video_details_p1 <- fromJSON("datasets/video_details_page1.json")
+video_details_p2 <- fromJSON("datasets/video_details_page2.json")
+
+vid_id <- c(video_details_p1$items$id, video_details_p2$items$id)
+
+vid_snippet <- bind_rows(video_details_p1$items$snippet,
+                         video_details_p2$items$snippet) %>% 
+  mutate(id = vid_id) %>% 
+  select(id, title, description, publishedAt) %>% 
+  tibble()
+vid_content_details <- bind_rows(video_details_p1$items$contentDetails,
+                                 video_details_p2$items$contentDetails) %>% 
+  mutate(id = vid_id) %>% 
+  select(id, duration) %>% 
+  tibble()
+
+# Function to convert duration to be consistent
+convert_duration <- function(duration) {
+  # Check if the duration contains only minutes
+  if (grepl("^PT\\d+M$", duration)) {
+    duration <- paste0(duration, "0S")
+  }
+  
+  # Check if the duration contains only seconds
+  if (grepl("^PT\\d+S$", duration)) {
+    duration <- paste0("PT0M", gsub("^PT(\\d+)S$", "\\1S", duration))
+  }
+  
+  # Return the modified duration
+  return(duration)
+}
+
+video_details <- left_join(vid_snippet, vid_content_details,
+                           by = join_by(id)) %>% 
+  mutate(publishedAt = ymd_hms(publishedAt),
+         duration = sapply(duration, convert_duration)) %>% 
+  mutate(duration = ms(duration))
+
+head(video_details) %>% 
+  kbl(booktabs = TRUE, linesep = "") %>% 
+  kable_styling(bootstrap_options = c("condensed",
+                                      "striped",
+                                      "hover"),
+                latex_options = c("condensed",
+                                  "hover"),
+                full_width = FALSE)
+
 ```
 
 # Audience Retention
