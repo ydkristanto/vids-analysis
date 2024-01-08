@@ -365,15 +365,369 @@ retention_2020_1 <- bind_rows(retention_2020_1.1,
                               retention_2020_1.7,
                               retention_2020_1.8) %>%
   mutate(year = 2020)
-write_csv(retention_2020_2,
-          file = "datasets/retention_2020_2.csv")
+write_csv(retention_2020_1,
+          file = "datasets/retention_2020_1.csv")
 
-print(retention_2020_2)
+print(retention_2020_1)
 ```
 
 ### 2021
 
+Retrieving audience retention data of videos from subtopic 1.1 Bidang Koordinat. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3DerrB7Ku0HyQ%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.1.1 <- fromJSON("datasets/retention_2021_y7zRv0bPAt4.json",
+                             flatten = TRUE)
+ret21_json_1.1.2 <- fromJSON("datasets/retention_2021_8_HqAYKZZ_I.json",
+                             flatten = TRUE)
+ret21_json_1.1.3 <- fromJSON("datasets/retention_2021_errB7Ku0HyQ.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.1 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.1.1$rows),
+       as.data.frame(ret21_json_1.1.2$rows),
+       as.data.frame(ret21_json_1.1.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.1[,c(2, 3, 4)] = apply(retention_2021_1.1[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.1)
+```
+
+Retrieving audience retention data of videos from subtopic 1.2 Grafik Persamaan Dua Variabel. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3Dvr7jLRIA7C0%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.2.1 <- fromJSON("datasets/retention_2021_L60C_wcLDHU.json",
+                             flatten = TRUE)
+ret21_json_1.2.2 <- fromJSON("datasets/retention_2021_Jv4y4Z4zeRc.json",
+                             flatten = TRUE)
+ret21_json_1.2.3 <- fromJSON("datasets/retention_2021_7Ak8vzFzN_Y.json",
+                             flatten = TRUE)
+ret21_json_1.2.4 <- fromJSON("datasets/retention_2021_vr7jLRIA7C0.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.2 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.2.1$rows),
+       as.data.frame(ret21_json_1.2.2$rows),
+       as.data.frame(ret21_json_1.2.3$rows),
+       as.data.frame(ret21_json_1.2.4$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.2[,c(2, 3, 4)] = apply(retention_2021_1.2[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.2)
+```
+
+Retrieving audience retention data of videos from subtopic 1.3 Garis. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3Dkny1ZHg4tyM%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.3.1 <- fromJSON("datasets/retention_2021_qxsXKYJRgJI.json",
+                             flatten = TRUE)
+ret21_json_1.3.2 <- fromJSON("datasets/retention_2021_nV01VpbjQLQ.json",
+                             flatten = TRUE)
+ret21_json_1.3.3 <- fromJSON("datasets/retention_2021_kny1ZHg4tyM.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.3 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.3.1$rows),
+       as.data.frame(ret21_json_1.3.2$rows),
+       as.data.frame(ret21_json_1.3.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.3[,c(2, 3, 4)] = apply(retention_2021_1.3[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.3)
+```
+
+Retrieving audience retention data of videos from subtopic 1.4 Persamaan Kuadrat. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3DWZVKP14QVgo%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.4.1 <- fromJSON("datasets/retention_2021_2Wsb2KmeD04.json",
+                             flatten = TRUE)
+ret21_json_1.4.2 <- fromJSON("datasets/retention_2021_u-qsNS-65pQ.json",
+                             flatten = TRUE)
+ret21_json_1.4.3 <- fromJSON("datasets/retention_2021_hQTDiy0X4eo.json",
+                             flatten = TRUE)
+ret21_json_1.4.4 <- fromJSON("datasets/retention_2021_WZVKP14QVgo.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.4 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.4.1$rows),
+       as.data.frame(ret21_json_1.4.2$rows),
+       as.data.frame(ret21_json_1.4.3$rows),
+       as.data.frame(ret21_json_1.4.4$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.4[,c(2, 3, 4)] = apply(retention_2021_1.4[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.4)
+```
+
+Retrieving audience retention data of videos from subtopic 1.5 Persamaan-Persamaan Lain. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3DQS8l0H1BGjY%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.5.1 <- fromJSON("datasets/retention_2021_DRr8kXo0Agg.json",
+                             flatten = TRUE)
+ret21_json_1.5.2 <- fromJSON("datasets/retention_2021_br341Djn3_0.json",
+                             flatten = TRUE)
+ret21_json_1.5.3 <- fromJSON("datasets/retention_2021_KJKYkGivPi8.json",
+                             flatten = TRUE)
+ret21_json_1.5.4 <- fromJSON("datasets/retention_2021_QS8l0H1BGjY.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.5 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.5.1$rows),
+       as.data.frame(ret21_json_1.5.2$rows),
+       as.data.frame(ret21_json_1.5.3$rows),
+       as.data.frame(ret21_json_1.5.4$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.5[,c(2, 3, 4)] = apply(retention_2021_1.5[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.5)
+```
+
+Retrieving audience retention data of videos from subtopic 1.6 Pertidaksamaan. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3DPcSTCsI6zUk%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.6.1 <- fromJSON("datasets/retention_2021_RF1chK7xiX0.json",
+                             flatten = TRUE)
+ret21_json_1.6.2 <- fromJSON("datasets/retention_2021_9KVzGWFEufI.json",
+                             flatten = TRUE)
+ret21_json_1.6.3 <- fromJSON("datasets/retention_2021_PcSTCsI6zUk.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.6 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.6.1$rows),
+       as.data.frame(ret21_json_1.6.2$rows),
+       as.data.frame(ret21_json_1.6.3$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.6[,c(2, 3, 4)] = apply(retention_2021_1.6[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.6)
+```
+
+Retrieving audience retention data of videos from subtopic 1.7 Persamaan dan Pertidaksamaan Nilai Mutlak. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2021-12-31&filters=video%3D%3DqXBG2JV7tms%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2021-08-22&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.7.1 <- fromJSON("datasets/retention_2021_uDQAWZsh3ns.json",
+                             flatten = TRUE)
+ret21_json_1.7.2 <- fromJSON("datasets/retention_2021_qXBG2JV7tms.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.7 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.7.1$rows),
+       as.data.frame(ret21_json_1.7.2$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.7[,c(2, 3, 4)] = apply(retention_2021_1.7[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.7)
+```
+
+Retrieving audience retention data of videos from subtopic 1.8 Metode Grafik. The data was retrieved on 8 January 2024.
+
+```         
+curl \
+  'https://youtubeanalytics.googleapis.com/v2/reports?dimensions=video%2CelapsedVideoTimeRatio&endDate=2020-12-31&filters=video%3D%3Dfm6Dv9POaQk%3BaudienceType%3D%3DORGANIC&ids=channel%3D%3DMINE&metrics=audienceWatchRatio%2CrelativeRetentionPerformance&startDate=2020-09-14&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+```
+
+```{r}
+#| echo: false
+
+# Creating lists from JSON files
+ret21_json_1.8.1 <- fromJSON("datasets/retention_2021_v4NPzGXcbaw.json",
+                             flatten = TRUE)
+ret21_json_1.8.2 <- fromJSON("datasets/retention_2021_fm6Dv9POaQk.json",
+                             flatten = TRUE)
+
+# Combining dataframes into a tibble
+retention_2021_1.8 <- rbind_pages(
+  list(as.data.frame(ret21_json_1.8.1$rows),
+       as.data.frame(ret21_json_1.8.2$rows))
+) %>% 
+  tibble() %>% 
+  rename(vid_id = V1,
+         elapsed_time_ratio = V2,
+         audience_watch_ratio = V3,
+         relative_retention_performance = V4)
+
+retention_2021_1.8[,c(2, 3, 4)] = apply(retention_2021_1.8[,c(2, 3, 4)], 2,
+                                    function(x)
+                                      as.numeric(as.character(x)))
+
+print(retention_2021_1.8)
+```
+
+Combining subtopic data into one topic.
+
+```{r}
+#| echo: false
+
+retention_2021_1 <- bind_rows(retention_2021_1.1,
+                              retention_2021_1.2,
+                              retention_2021_1.3,
+                              retention_2021_1.4,
+                              retention_2021_1.5,
+                              retention_2021_1.6,
+                              retention_2021_1.7,
+                              retention_2021_1.8) %>%
+  mutate(year = 2021)
+
+write_csv(retention_2021_1,
+          file = "datasets/retention_2021_1.csv")
+
+print(retention_2021_1)
+```
+
 ### Two Year Data
+
+```{r}
+retention_1 <- bind_rows(retention_2020_1,
+                         retention_2021_1)
+
+write_csv(retention_1,
+          file = "datasets/retention_1.csv")
+
+print(retention_1)
+```
 
 ## Function
 
@@ -2147,7 +2501,8 @@ print(retention_5)
 ## Combination of Retention Data
 
 ```{r}
-retention <- bind_rows(retention_2,
+retention <- bind_rows(retention_1,
+                       retention_2,
                        retention_3,
                        retention_4,
                        retention_5)
