@@ -94,6 +94,15 @@ head(video_details) %>%
 
 ```
 
+```{r}
+video_information <- read_csv(file = "datasets/video_information.csv",
+                              show_col_types = FALSE)
+video_position <- video_information %>% 
+  select(id, position)
+video_type <- video_information %>% 
+  select(id, talking_head)
+```
+
 # Audience Retention
 
 ## Equations and Graphs
@@ -2577,7 +2586,20 @@ retention <- bind_rows(retention_1,
                        retention_2,
                        retention_3,
                        retention_4,
-                       retention_5)
+                       retention_5) %>% 
+  rename(id = vid_id)
+
+video_duration <- video_details %>% 
+  select(id, title, duration)
+
+retention <- retention %>% 
+  left_join(video_duration,
+            by = join_by(id))
+
+retention <- retention %>% 
+  relocate(title, .after = id) %>% 
+  mutate(elapsed_time_mins = elapsed_time_ratio*as.numeric(duration)/60) %>% 
+  relocate(elapsed_time_mins, .before = elapsed_time_ratio)
 
 write_csv(retention,
           file = "datasets/retention.csv")
