@@ -88,10 +88,11 @@ head(video_details) %>%
   kable_styling(bootstrap_options = c("condensed",
                                       "striped",
                                       "hover"),
-                latex_options = c("condensed",
-                                  "hover"),
+                latex_options = c("striped"),
                 full_width = FALSE)
-
+remove(list = c("video_details_p1", "video_details_p2",
+            "vid_id", "vid_snippet", "vid_content_details",
+            "convert_duration"))
 ```
 
 ```{r}
