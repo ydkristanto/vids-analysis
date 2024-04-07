@@ -6,41 +6,8 @@ library(htmltools)
 library(plotly)
 
 # Data ----
-load(url("https://raw.githubusercontent.com/ydkristanto/vids-analysis/main/datasets/vid_analytics.RData"))
+load(url("https://raw.githubusercontent.com/ydkristanto/vids-analysis/main/datasets/vid_data.RData"))
 # Further readings: https://nrennie.rbind.io/blog/webr-shiny-tidytuesday/
-video_title <- retention %>% 
-  select(id, title) %>% 
-  distinct() %>% 
-  rename(video_id = id)
-lesson_position <- video_information %>% 
-  distinct(topic_id, lesson_id) %>% 
-  group_by(topic_id) %>% 
-  mutate(lesson_position = row_number()) %>% 
-  ungroup() %>% 
-  select(lesson_id, lesson_position)
-video_duration <- retention %>% 
-  rename(video_id = id) %>% 
-  select(video_id, duration) %>% 
-  distinct() %>% 
-  mutate(duration = round(as.numeric(ms(duration)) / 60, 2))
-video_info <- video_information %>% 
-  rename(video_id = id, video_position = position) %>% 
-  left_join(lesson_position, by = join_by(lesson_id)) %>% 
-  select(-lesson_id) %>% 
-  left_join(video_title, by = join_by(video_id)) %>% 
-  left_join(video_duration, by = join_by(video_id))
-
-## basic_stats_data ----
-basic_stats_data <- video_stat %>% 
-  rename(video_id = video) %>% 
-  left_join(video_info, by = join_by(video_id))
-
-## retention_data ----
-retention_data <- retention %>% 
-  select(-title, -duration) %>% 
-  rename(video_id = id) %>% 
-  left_join(video_info, by = join_by(video_id))
-
 
 # Links ----
 others_link <- tags$a(
@@ -130,7 +97,16 @@ ui <- page_navbar(
         #### lesson_position ----
         checkboxGroupInput(
           "lesson_position", "Lesson position in a section:",
-          1:8,
+          c(
+            "1" = 1,
+            "2" = 2,
+            "3" = 3,
+            "4" = 4,
+            "5" = 5,
+            "6" = 6,
+            "7" = 7,
+            "8" = 8
+          ),
           selected = 1:8,
           inline = TRUE
         ),
@@ -211,21 +187,18 @@ server <- function(input, output, session) {
     max_daterange <- input$daterange[2]
     min_length <- input$length[1]
     max_length <- input$length[2]
-    sections <- input$sections %>% as.numeric()
-    lesson_position <- input$lesson_position %>% as.numeric()
-    vid_position <- input$vid_position %>% as.numeric()
-    talking_head <- input$talking_head %>% as.numeric()
+    sect <- input$sections
+    lesson_pos <- input$lesson_position
+    vid_pos <- input$vid_position
+    head <- input$talking_head
     
     # Apply filter
     dat <- basic_stats_data %>% 
-      group_by(video_id) %>% 
       filter(
-        topic_id %in% sections,
-        lesson_position %in% lesson_position,
-        video_position %in% vid_position,
-        talking_head %in% talking_head
-      ) %>% 
-      filter(
+        topic_id %in% sect,
+        lesson_position %in% lesson_pos,
+        vid_position %in% vid_pos,
+        talking_head %in% head,
         day >= min_daterange,
         day <= max_daterange,
         duration >= min_length,
@@ -237,40 +210,112 @@ server <- function(input, output, session) {
   ## retention_dat ----
   retention_dat <- reactive({
     # Temp vars for filter
-    year <- input$year
+    year_input <- input$year
     min_length <- input$length[1]
     max_length <- input$length[2]
-    sections <- input$sections
-    lesson_position <- input$lesson_position
-    vid_position <- input$vid_position
-    talking_head <- input$talking_head
+    sect <- input$sections
+    lesson_pos <- input$lesson_position
+    vid_pos <- input$vid_position
+    head <- input$talking_head
     
     # Apply filter
     dat <- retention_data %>% 
       filter(
-        year %in% year,
+        year %in% year_input,
         duration >= min_length,
         duration <= max_length,
-        topic_id %in% sections,
-        lesson_position %in% lesson_position,
-        video_position %in% vid_position,
-        talking_head %in% talking_head
+        topic_id %in% sect,
+        lesson_position %in% lesson_pos,
+        vid_position %in% vid_pos,
+        talking_head %in% head
       )
     dat
   })
   
   ## contents_value ----
   output$contents_value <- renderText({
+    # Temp vars for filter
+    min_length <- input$length[1]
+    max_length <- input$length[2]
+    sect <- input$sections
+    lesson_pos <- input$lesson_position
+    vid_pos <- input$vid_position
+    head <- input$talking_head
+    
+    data <- video_info %>% 
+      filter(
+        duration >= min_length,
+        duration <= max_length,
+        topic_id %in% sect,
+        lesson_position %in% lesson_pos,
+        vid_position %in% vid_pos,
+        talking_head %in% head
+      )
+    n <- data %>% 
+      distinct(vid_id) %>% 
+      nrow()
+    
+    n
+  })
+  
+  ## views_value ----
+  output$views_value <- renderText({
+    # Temp vars for filter
+    min_length <- input$length[1]
+    max_length <- input$length[2]
+    sect <- input$sections
+    lesson_pos <- input$lesson_position
+    vid_pos <- input$vid_position
+    head <- input$talking_head
+    year_input <- input$year
+    
     if (input$stat == "Basic Statistics") {
-      n <- basic_stats_dat() %>%
-        distinct(video_id) %>% 
-        nrow()
+      n <- sum(basic_stats_dat()$views)
     } else {
-      n <- retention_dat() %>%
-        distinct(video_id) %>% 
-        nrow()
+      data <- basic_stats_data %>% 
+        mutate(year_stat = year(day)) %>% 
+        filter(
+          topic_id %in% sect,
+          lesson_position %in% lesson_pos,
+          vid_position %in% vid_pos,
+          talking_head %in% head,
+          year_stat %in% year_input,
+          duration >= min_length,
+          duration <= max_length
+        )
+      n <- sum(data$views)
     }
     n
+  })
+  
+  ## watch_time_value ----
+  output$watch_time_value <- renderText({
+    # Temp vars for filter
+    min_length <- input$length[1]
+    max_length <- input$length[2]
+    sect <- input$sections
+    lesson_pos <- input$lesson_position
+    vid_pos <- input$vid_position
+    head <- input$talking_head
+    year_input <- input$year
+    
+    if (input$stat == "Basic Statistics") {
+      n <- sum(basic_stats_dat()$estimatedMinutesWatched)
+    } else {
+      data <- basic_stats_data %>% 
+        mutate(year_stat = year(day)) %>% 
+        filter(
+          topic_id %in% sect,
+          lesson_position %in% lesson_pos,
+          vid_position %in% vid_pos,
+          talking_head %in% head,
+          year_stat %in% year_input,
+          duration >= min_length,
+          duration <= max_length
+        )
+      n <- sum(data$estimatedMinutesWatched)
+    }
+    round(n / 60, 2)
   })
   
 }
