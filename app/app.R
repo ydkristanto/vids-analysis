@@ -29,115 +29,129 @@ ui <- page_navbar(
   id = "vid_analytics",
   ## Sidebar ----
   sidebar = sidebar(
-    accordion(
-      ### Statistics ----
-      accordion_panel(
-        title = "Statistics",
-        selectInput(
-          "stat", "Choose statistics:",
-          c("Basic Statistics", "Retention"),
-          selected = "Basic Statistics"
-        ),
-        conditionalPanel(
-          condition = "input.stat == 'Basic Statistics'",
+    ## Explorer sidebar ----
+    conditionalPanel(
+      "input.vid_analytics === 'Explorer'",
+      accordion(
+        ### Statistics ----
+        accordion_panel(
+          title = "Statistics",
           selectInput(
-            "period", "Daily/monthly:",
-            c("Daily", "Monthly"),
-            selected = "Daily"
+            "stat", "Choose statistics:",
+            c("Basic Statistics", "Retention"),
+            selected = "Basic Statistics"
           ),
-          selectInput(
-            "chart", "Chart:",
-            c("Heatmap", "Line"),
-            selected = "Heatmap"
+          conditionalPanel(
+            condition = "input.stat == 'Basic Statistics'",
+            selectInput(
+              "period", "Daily/monthly:",
+              c("Daily", "Monthly"),
+              selected = "Daily"
+            ),
+            selectInput(
+              "chart", "Chart:",
+              c("Heatmap", "Line"),
+              selected = "Heatmap"
+            )
+          ),
+          conditionalPanel(
+            condition = "input.stat == 'Retention'",
+            selectInput(
+              "time_type", "Time:",
+              c("Real (minutes)", "Ratio"),
+              selected = "Percentage"
+            )
           )
         ),
-        conditionalPanel(
-          condition = "input.stat == 'Retention'",
-          selectInput(
-            "time_type", "Time:",
-            c("Real (minutes)", "Percentage"),
-            selected = "Percentage"
-          )
-        )
-      ),
-      ### Filter ----
-      accordion_panel(
-        title = "Filter",
-        conditionalPanel(
-          condition = "input.stat == 'Basic Statistics'",
-          #### daterange ----
-          dateRangeInput(
-            "daterange", "Date Range:",
-            start = "2020-09-14",
-            end = "2020-12-31",
-            min = "2020-09-01",
-            max = "2021-12-31",
-            format = "dd/mm/yy",
-            separator = " - "
-          )
-        ),
-        conditionalPanel(
-          condition = "input.stat == 'Retention'",
-          #### year ----
+        ### Filter ----
+        accordion_panel(
+          title = "Filter",
+          conditionalPanel(
+            condition = "input.stat == 'Basic Statistics'",
+            #### daterange ----
+            dateRangeInput(
+              "daterange", "Date Range:",
+              start = "2020-09-14",
+              end = "2020-12-31",
+              min = "2020-09-01",
+              max = "2021-12-31",
+              format = "dd/mm/yy",
+              separator = " - "
+            )
+          ),
+          conditionalPanel(
+            condition = "input.stat == 'Retention'",
+            #### year ----
+            checkboxGroupInput(
+              "year", "Years:",
+              c("2020", "2021"),
+              selected = "2020"
+            ),
+          ),
+          #### length ----
+          sliderInput(
+            "length", "Video lengths (mins):",
+            min = 0, max = 20, value = c(3, 10), step = 0.1, ticks = FALSE
+          ),
+          #### sections ----
           checkboxGroupInput(
-            "year", "Years:",
-            c("2020", "2021"),
-            selected = "2020"
+            "sections", "Sections:",
+            c(
+              "Equations & Graphs" = 1,
+              "Functions" = 2,
+              "Rational Functions" = 3,
+              "Exponentials & Logarithmic Functions" = 4,
+              "Trigonometric Functions" = 5
+            ),
+            selected = 1:5
           ),
-        ),
-        #### length ----
-        sliderInput(
-          "length", "Video lengths (mins):",
-          min = 0, max = 20, value = c(3, 10), step = 0.1, ticks = FALSE
-        ),
-        #### sections ----
-        checkboxGroupInput(
-          "sections", "Sections:",
-          c(
-            "Equations & Graphs" = 1,
-            "Functions" = 2,
-            "Rational Functions" = 3,
-            "Exponentials & Logarithmic Functions" = 4,
-            "Trigonometric Functions" = 5
+          #### lesson_position ----
+          checkboxGroupInput(
+            "lesson_position", "Lesson position in a section:",
+            c(
+              "1" = 1,
+              "2" = 2,
+              "3" = 3,
+              "4" = 4,
+              "5" = 5,
+              "6" = 6,
+              "7" = 7,
+              "8" = 8
+            ),
+            selected = 1:8,
+            inline = TRUE
           ),
-          selected = 1:5
-        ),
-        #### lesson_position ----
-        checkboxGroupInput(
-          "lesson_position", "Lesson position in a section:",
-          c(
-            "1" = 1,
-            "2" = 2,
-            "3" = 3,
-            "4" = 4,
-            "5" = 5,
-            "6" = 6,
-            "7" = 7,
-            "8" = 8
+          #### vid_position ----
+          checkboxGroupInput(
+            "vid_position", "Video position in a lesson:",
+            1:6,
+            selected = 1:6,
+            inline = TRUE
           ),
-          selected = 1:8,
-          inline = TRUE
+          #### talking_head ----
+          checkboxGroupInput(
+            "talking_head", "Talking head:",
+            c(
+              "Yes" = 1,
+              "No" = 0
+            ),
+            selected = c(0, 1),
+            inline = TRUE
+          )
         ),
-        #### vid_position ----
-        checkboxGroupInput(
-          "vid_position", "Video position in a lesson:",
-          1:6,
-          selected = 1:6,
-          inline = TRUE
-        ),
-        #### talking_head ----
-        checkboxGroupInput(
-          "talking_head", "Talking head:",
-          c(
-            "Yes" = 1,
-            "No" = 0
-          ),
-          selected = c(0, 1),
-          inline = TRUE
-        )
+        multiple = FALSE,
+        open = "Statistics"
+      )
+    ),
+    conditionalPanel(
+      "input.vid_analytics === 'Information'",
+      h4("Description",
+         style = "font-size: inherit; font-weight: bold"
       ),
-      multiple = FALSE,
-      open = "Statistics"
+      p("This Shiny dashboard explore statistics of 92 Algebra and Trigonometry instructional videos from 2020 and 2021."),
+      hr(),
+      h4("MIT License", style = "font-size: inherit; font-weight: bold"),
+      p("Copyright © 2024 Yosep Dwi Kristanto")
     )
   ),
   ## Explorer ----
@@ -164,7 +178,8 @@ ui <- page_navbar(
       ),
       ### plot_output ----
       card(
-        plotlyOutput("plot_output")
+        plotlyOutput("plot_output"),
+        full_screen = TRUE
       ),
       col_widths = c(4, 4, 4, 12),
       row_heights = c(1, 3)
@@ -174,7 +189,39 @@ ui <- page_navbar(
   ## Information ----
   nav_panel(
     title = "Information",
-    "Here is the information!",
+    layout_column_wrap(
+      width = 1 / 2,
+      navset_card_underline(
+        ### About ----
+        nav_panel(
+          title = "About",
+          p("This Shiny dashboard explores statistics from 92 Algebra and Trigonometry instructional videos, a course within the Mathematics Education department at Sanata Dharma University, Yogyakarta, Indonesia. The main focus of the statistics are two: the number of views per video per day/month and viewer retention per video. Additionally, the dashboard also displays accumulations from multiple videos, including the number of views and watch time (hours)."),
+          p("Through exploration via this dashboard, users are expected to observe learner behavior while watching instructional videos. Information about this behavior is important for educators who are also content creators of instructional videos.")
+        ),
+        nav_panel(
+          ### Tools ----
+          title = "Tools",
+          p("This dashboard was developed using the R programming language and the Shiny package. The shinylive package was utilized to export this application so it can be run in a web browser without a separate R server. The dashboard layout is structured using bslib."),
+          p("All statistical charts in this dashboard are created using the ggplot2 package. The dplyr package is used to manipulate data obtained from OECD. Both of these packages are part of the tidyverse meta-package.")
+        ),
+        nav_panel(
+          ### Developer ----
+          title = "Developer",
+          p("The developer and maintainer of this application is ", a("Yosep Dwi Kristanto,", href = "https://people.usd.ac.id/~ydkristanto", target = "_blank"), " a lecturer and researcher in ", a("the Mathematics Education department", href = "https://usd.ac.id/s1pmat", target = "_blank"), " at ", a("Sanata Dharma University,", href = "https://www.usd.ac.id/", target = "_blank"), " Yogyakarta, Indonesia.")
+        ),
+        nav_panel(
+          ### Source Code ----
+          title = "Source Code",
+          p("The source code of this application is available on ", a("GitHub repository.", href = "https://github.com/ydkristanto/vids-analysis", target = "_blank"), " If you would like to report any issues or request additional features for this application, please ", a("create an issue", href = "https://github.com/ydkristanto/vids-analysis/issues", target = "_blank"), " or, even better, submit a pull request in the repository.")
+        )
+      ),
+      ### Data ----
+      card(
+        card_header("Data"),
+        p("The data used in this dashboard spans from September 14, 2020, to December 28, 2021. This period was chosen because, during that time frame, the videos were used in online distance learning, coinciding with the COVID-19 pandemic."),
+        p("The videos are organized into lessons. These lessons form a topic. These topics are the main components of the Algebra and Trigonometry course. Therefore, the data used includes variables such as vid_position (video position within a lesson), lesson_position (lesson position within a topic), and topic_id (topic names, for example, 'Equations & Graphs').")
+      )
+    ),
     icon = shiny::icon("circle-info")
   ),
   nav_spacer(),
@@ -336,52 +383,85 @@ server <- function(input, output, session) {
   output$plot_output <- renderPlotly({
     if (input$stat == "Basic Statistics") {
       if (input$period == "Daily") {
-        data <- basic_stats_dat() %>% 
-          select(vid_title, day, views) %>% 
-          mutate(
-            views = ifelse(
-              is.na(views), 0, views
-            )
-          ) %>% 
-          pivot_wider(
-            names_from = day,
-            values_from = views
-          ) %>% 
-          as.data.frame()
         if (input$chart == "Heatmap") {
-          data_matrix <- data[,-1] %>% 
-            as.matrix()
-          rownames(data_matrix) <- data$vid_title
-          
-          plot <- plot_ly(
-            x = colnames(data_matrix),
-            y = rownames(data_matrix),
-            z = data_matrix,
-            type = "heatmap"
-          ) %>% 
-            layout(
-              yaxis = list(title = "", showticklabels = FALSE)
+          p <- basic_stats_dat() %>% 
+            mutate(
+              vid_seq = 100 * topic_id + 10 * lesson_id + vid_position
+            ) %>% 
+            mutate(vid_title = fct_reorder(vid_title, vid_seq)) %>% 
+            ggplot(aes(x = day, y = vid_title, fill = views)) +
+            geom_tile() +
+            scale_fill_viridis_c(name = "Views") +
+            theme_minimal() +
+            theme(
+              axis.text.y = element_blank(),
+              axis.title.y = element_blank()
+            ) +
+            labs(
+              x = "Day"
             )
+          plot <- ggplotly(p)
         } else if (input$chart == "Line") {
           plot <- plot_ly(
             basic_stats_dat(), x = ~day, y = ~views, color = ~vid_title,
             type = "scatter", mode = "lines"
-          )
+          )%>% 
+            layout(xaxis = list(title = "Day"), 
+                   yaxis = list(title = "Views"))
         }
       } else if(input$period == "Monthly") {
-        
+        data <- basic_stats_dat() %>% 
+          mutate(
+            vid_seq = 100 * topic_id + 10 * lesson_id + vid_position,
+            month = format(day, "%Y-%m")
+          ) %>% 
+          select(vid_seq, vid_title, day, month, views) %>% 
+          arrange(vid_seq, day) %>% 
+          group_by(vid_seq, vid_title, month) %>% 
+          summarise(views_month = sum(views))
+        if (input$chart == "Heatmap") {
+          p <- data %>% 
+            mutate(vid_title = fct_reorder(vid_title, vid_seq)) %>% 
+            ggplot(aes(x = month, y = vid_title, fill = views_month)) +
+            geom_tile() +
+            scale_fill_viridis_c(name = "Views") +
+            theme_minimal() +
+            theme(
+              axis.text.y = element_blank(),
+              axis.title.y = element_blank()
+            ) +
+            labs(
+              x = "Month"
+            )
+          plot <- ggplotly(p)
+        } else if (input$chart == "Line") {
+          plot <- plot_ly(
+            data, x = ~month, y = ~views_month, color = ~vid_title,
+            type = "scatter", mode = "lines"
+          ) %>% 
+            layout(xaxis = list(title = "Month"), 
+                   yaxis = list(title = "Views"))
+        }
       }
     } else if (input$stat == "Retention") {
       if (input$time_type == "Real (minutes)") {
-        plot <- plot_ly(
-          retention_dat(), x = ~elapsed_time_mins, y = ~audience_watch_ratio,
-          type = "scatter"
-        )
-      } else if (input$time_type == "Percentage") {
-        plot <- plot_ly(
-          retention_dat(), x = ~elapsed_time_ratio, y = ~audience_watch_ratio,
-          type = "scatter"
-        )
+        p <- retention_dat() %>% 
+          ggplot(aes(x = elapsed_time_mins, y = audience_watch_ratio)) +
+          geom_point(alpha = .2) +
+          geom_smooth() +
+          xlim(0, 20) +
+          ylim(0, 1.6) +
+          theme_minimal() +
+          labs(x = "Elapsed time (minutes)", y = "Audience watch ratio")
+        plot <- ggplotly(p)
+      } else if (input$time_type == "Ratio") {
+        p <- retention_dat() %>% 
+          ggplot(aes(x = elapsed_time_ratio, y = audience_watch_ratio)) +
+          geom_point(alpha = .2) +
+          geom_smooth() +
+          theme_minimal() +
+          labs(x = "Elapsed time (minutes)", y = "Audience watch ratio")
+        plot <- ggplotly(p)
       }
       
     }
