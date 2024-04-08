@@ -143,6 +143,7 @@ ui <- page_navbar(
         open = "Statistics"
       )
     ),
+    ### Information sidebar ----
     conditionalPanel(
       "input.vid_analytics === 'Information'",
       h4("Description",
@@ -460,7 +461,7 @@ server <- function(input, output, session) {
           geom_point(alpha = .2) +
           geom_smooth() +
           theme_minimal() +
-          labs(x = "Elapsed time (minutes)", y = "Audience watch ratio")
+          labs(x = "Elapsed time (ratio)", y = "Audience watch ratio")
         plot <- ggplotly(p)
       }
       
