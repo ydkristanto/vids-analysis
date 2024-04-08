@@ -50,6 +50,14 @@ ui <- page_navbar(
             c("Heatmap", "Line"),
             selected = "Heatmap"
           )
+        ),
+        conditionalPanel(
+          condition = "input.stat == 'Retention'",
+          selectInput(
+            "time_type", "Time:",
+            c("Real (minutes)", "Percentage"),
+            selected = "Percentage"
+          )
         )
       ),
       ### Filter ----
@@ -154,8 +162,9 @@ ui <- page_navbar(
         value = textOutput("watch_time_value"),
         showcase = shiny::icon("stopwatch")
       ),
+      ### plot_output ----
       card(
-        
+        plotlyOutput("plot_output")
       ),
       col_widths = c(4, 4, 4, 12),
       row_heights = c(1, 3)
@@ -180,6 +189,28 @@ ui <- page_navbar(
 
 # Server ----
 server <- function(input, output, session) {
+  ## video_info_dat ----
+  video_info_dat <- reactive({
+    # Temp vars for filter
+    min_length <- input$length[1]
+    max_length <- input$length[2]
+    sect <- input$sections
+    lesson_pos <- input$lesson_position
+    vid_pos <- input$vid_position
+    head <- input$talking_head
+
+    dat <- video_info %>%
+      filter(
+        duration >= min_length,
+        duration <= max_length,
+        topic_id %in% sect,
+        lesson_position %in% lesson_pos,
+        vid_position %in% vid_pos,
+        talking_head %in% head
+      )
+    dat
+  })
+
   ## basic_stats_dat ----
   basic_stats_dat <- reactive({
     # Temp vars for filter
@@ -191,9 +222,9 @@ server <- function(input, output, session) {
     lesson_pos <- input$lesson_position
     vid_pos <- input$vid_position
     head <- input$talking_head
-    
+
     # Apply filter
-    dat <- basic_stats_data %>% 
+    dat <- basic_stats_data %>%
       filter(
         topic_id %in% sect,
         lesson_position %in% lesson_pos,
@@ -206,7 +237,7 @@ server <- function(input, output, session) {
       )
     dat
   })
-  
+
   ## retention_dat ----
   retention_dat <- reactive({
     # Temp vars for filter
@@ -217,9 +248,9 @@ server <- function(input, output, session) {
     lesson_pos <- input$lesson_position
     vid_pos <- input$vid_position
     head <- input$talking_head
-    
+
     # Apply filter
-    dat <- retention_data %>% 
+    dat <- retention_data %>%
       filter(
         year %in% year_input,
         duration >= min_length,
@@ -231,33 +262,16 @@ server <- function(input, output, session) {
       )
     dat
   })
-  
+
   ## contents_value ----
   output$contents_value <- renderText({
-    # Temp vars for filter
-    min_length <- input$length[1]
-    max_length <- input$length[2]
-    sect <- input$sections
-    lesson_pos <- input$lesson_position
-    vid_pos <- input$vid_position
-    head <- input$talking_head
-    
-    data <- video_info %>% 
-      filter(
-        duration >= min_length,
-        duration <= max_length,
-        topic_id %in% sect,
-        lesson_position %in% lesson_pos,
-        vid_position %in% vid_pos,
-        talking_head %in% head
-      )
-    n <- data %>% 
-      distinct(vid_id) %>% 
+    n <- video_info_dat() %>%
+      distinct(vid_id) %>%
       nrow()
-    
+
     n
   })
-  
+
   ## views_value ----
   output$views_value <- renderText({
     # Temp vars for filter
@@ -268,12 +282,12 @@ server <- function(input, output, session) {
     vid_pos <- input$vid_position
     head <- input$talking_head
     year_input <- input$year
-    
+
     if (input$stat == "Basic Statistics") {
       n <- sum(basic_stats_dat()$views)
     } else {
-      data <- basic_stats_data %>% 
-        mutate(year_stat = year(day)) %>% 
+      data <- basic_stats_data %>%
+        mutate(year_stat = year(day)) %>%
         filter(
           topic_id %in% sect,
           lesson_position %in% lesson_pos,
@@ -287,7 +301,7 @@ server <- function(input, output, session) {
     }
     n
   })
-  
+
   ## watch_time_value ----
   output$watch_time_value <- renderText({
     # Temp vars for filter
@@ -298,12 +312,12 @@ server <- function(input, output, session) {
     vid_pos <- input$vid_position
     head <- input$talking_head
     year_input <- input$year
-    
+
     if (input$stat == "Basic Statistics") {
       n <- sum(basic_stats_dat()$estimatedMinutesWatched)
     } else {
-      data <- basic_stats_data %>% 
-        mutate(year_stat = year(day)) %>% 
+      data <- basic_stats_data %>%
+        mutate(year_stat = year(day)) %>%
         filter(
           topic_id %in% sect,
           lesson_position %in% lesson_pos,
@@ -317,7 +331,63 @@ server <- function(input, output, session) {
     }
     round(n / 60, 2)
   })
-  
+
+  ## plot_output ----
+  output$plot_output <- renderPlotly({
+    if (input$stat == "Basic Statistics") {
+      if (input$period == "Daily") {
+        data <- basic_stats_dat() %>% 
+          select(vid_title, day, views) %>% 
+          mutate(
+            views = ifelse(
+              is.na(views), 0, views
+            )
+          ) %>% 
+          pivot_wider(
+            names_from = day,
+            values_from = views
+          ) %>% 
+          as.data.frame()
+        if (input$chart == "Heatmap") {
+          data_matrix <- data[,-1] %>% 
+            as.matrix()
+          rownames(data_matrix) <- data$vid_title
+          
+          plot <- plot_ly(
+            x = colnames(data_matrix),
+            y = rownames(data_matrix),
+            z = data_matrix,
+            type = "heatmap"
+          ) %>% 
+            layout(
+              yaxis = list(title = "", showticklabels = FALSE)
+            )
+        } else if (input$chart == "Line") {
+          plot <- plot_ly(
+            basic_stats_dat(), x = ~day, y = ~views, color = ~vid_title,
+            type = "scatter", mode = "lines"
+          )
+        }
+      } else if(input$period == "Monthly") {
+        
+      }
+    } else if (input$stat == "Retention") {
+      if (input$time_type == "Real (minutes)") {
+        plot <- plot_ly(
+          retention_dat(), x = ~elapsed_time_mins, y = ~audience_watch_ratio,
+          type = "scatter"
+        )
+      } else if (input$time_type == "Percentage") {
+        plot <- plot_ly(
+          retention_dat(), x = ~elapsed_time_ratio, y = ~audience_watch_ratio,
+          type = "scatter"
+        )
+      }
+      
+    }
+    
+    plot
+  })
 }
 
 # App ----
